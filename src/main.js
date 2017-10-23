@@ -4,8 +4,7 @@ import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-default/index.css';
 
 import App from './App.vue'
-import router1 from './components/router1.vue'
-import router2 from './components/router2.vue'
+import Login from './components/login.vue'
 
 Vue.use(ElementUI)
 
@@ -14,9 +13,13 @@ Vue.use(VueRouter)
 
 //定义路径
 const routes = [
-    { path: '/', component: router1 },
-    { path: '/router1', component: router1 },
-    { path: '/router2', component: router2 },
+    { path: '/', component: Login },
+    { path: '/login', component: Login },
+    { path: '/home', component: resolve => require(['./components/home.vue'], resolve),
+    	children:[
+            { path: 'addstudent', component: resolve => require(['./components/addstudent.vue'], resolve) }
+       ]
+     },
 ]
 
 //创建路由对象
