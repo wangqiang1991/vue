@@ -20,8 +20,8 @@
 		      </el-menu-item>
 		      <el-submenu index="2">
 				  <template slot="title"><i class="el-icon-menu"></i>学生管理</template>
-				  <el-menu-item index="2-1">增添学生</el-menu-item>
-				  <el-menu-item index="2-2">修改学生</el-menu-item>
+				 <router-link to="/home/addstudent"> <el-menu-item index="2-1">增添学生</el-menu-item></router-link>
+				  <router-link to="/home/update"><el-menu-item index="2-2">修改学生</el-menu-item></router-link>
 				  <el-menu-item index="2-3">查询学生</el-menu-item>
 		      </el-submenu>
 		      <el-submenu index="3">
@@ -44,13 +44,29 @@
 
   export default {
   	name:'home',
+  	data() {
+       return {
+          number:0
+      }
+    },
     methods: {
       handleOpen(key, keyPath) {
         console.log(key, keyPath);
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);
+      },
+      add(){
+      	this.number++
       }
     }
   }
 </script>
+
+<style>
+	
+	a{
+		text-decoration: none;
+		color: #e50909;
+	}
+</style>

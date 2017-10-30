@@ -1,5 +1,7 @@
 <template>
 <el-card class="box-card">
+  <img src="" alt="">
+  <el-button type="text">学生管理系统</el-button>
   <div class="div">
      <el-input placeholder="请输入用户名" v-model="user">
         <template slot="prepend">用户名</template>
@@ -27,6 +29,9 @@ import axios from 'axios'
           tip:''
       }
     },
+    mounted :function(){
+      console.log(this.user == '')
+    },
     methods: {
       login:function () {
         let user = this.user;
@@ -45,7 +50,7 @@ import axios from 'axios'
               });
             return false;
         }
-
+         this.$router.push('/home/addstudent');
 
         // axios.get('/api/users/get',{
         //      params: {
@@ -54,13 +59,13 @@ import axios from 'axios'
         // }).then(function(res){
         //   console.log(res.data)
         // })
-         axios.delete('/api/users/delete',{
-             params: {
-              name: 'delete'
-            }
-        }).then(function(res){
-          console.log(res.data)
-        })
+        //  axios.delete('/api/users/delete',{
+        //      params: {
+        //       name: 'delete'
+        //     }
+        // }).then(function(res){
+        //   console.log(res.data)
+        // })
        
         // axios.post('/api/users/post', {
         //   name: 'Fred'
@@ -82,6 +87,9 @@ import axios from 'axios'
 </script>
 
 <style>
+  @import '../assets/css/login.css';
+
+
 	.box-card{
 		width: 400px;
     height: 300px;
@@ -91,10 +99,6 @@ import axios from 'axios'
     left: 50%;
     margin-left: -200px;
 	}
-  .div{
-    margin-top: 15px;
-    margin-bottom: 35px;
-  }
   #login{
     width: 100%;
   }

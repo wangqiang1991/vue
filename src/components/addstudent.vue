@@ -12,12 +12,14 @@
   </div>
   <div class="div">
     <el-button type="primary" id='login' @click='login'>登录</el-button>
+     <el-button type="primary" @click='add'>+</el-button>
   </div>
 </div>
 </template>
 
 <script>
-import axios from 'axios'
+import axios from 'axios';
+import {testfn,name} from '../assets/js/test.js';
 
   export default {
     name:'addstudent',
@@ -25,10 +27,23 @@ import axios from 'axios'
        return {
           user:'',
           pwd:'',
-          tip:''
+          tip:'',
+          number:0
       }
     },
+    mounted:function(){
+
+      //testfn();
+      //console.log(name)
+      var data = [{'name':'wang','age':25 },{'name':'qiang','age':35 }];
+       this.$store.dispatch('setdata', data);
+       this.$store.dispatch('setApp', 'android');
+    },
     methods: {
+      add:function(){
+        this.number++;
+        this.$store.dispatch('setApp', this.number);
+      },
       login:function () {
         let user = this.user;
         let pwd = this.pwd;

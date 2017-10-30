@@ -1,5 +1,6 @@
 import Vue from 'vue'
-import VueRouter from 'vue-router'
+import VueRouter from 'vue-router';
+import store from './store'
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-default/index.css';
 
@@ -17,9 +18,10 @@ const routes = [
     { path: '/login', component: Login },
     { path: '/home', component: resolve => require(['./components/home.vue'], resolve),
     	children:[
-            { path: 'addstudent', component: resolve => require(['./components/addstudent.vue'], resolve) }
+            { path: 'addstudent', component: resolve => require(['./components/addstudent.vue'], resolve) },
+            { path: 'update', component: resolve => require(['./components/update.vue'], resolve) }
        ]
-     },
+     }
 ]
 
 //创建路由对象
@@ -31,6 +33,7 @@ const router = new VueRouter({
 new Vue({
   el: '#app',
   router:router,
+  store,
   template: '<App></App>',
   components: { App },  
 })

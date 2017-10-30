@@ -29,15 +29,8 @@ module.exports = {
         loader: 'style-loader!css-loader'
       }, 
       {
-        test: /\.(eot|svg|ttf|woff|woff2)$/,
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif|svg)$/,
         loader: 'file-loader'
-      }, 
-      {
-        test: /\.(png|jpg|gif|svg)$/,
-        loader: 'file-loader',
-        options: {
-          name: '[name].[ext]?[hash]'
-        }
       }
     ]
   },
@@ -75,7 +68,7 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new webpack.optimize.UglifyJsPlugin({
-      sourceMap: true,
+      sourceMap: false,
       compress: {
         warnings: false
       }

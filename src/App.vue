@@ -4,7 +4,10 @@
   </div>
 </template>
 
-
+<script>
+	
+	console.log('app.vue')
+</script>
 
 
 <style>
