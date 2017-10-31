@@ -35,6 +35,7 @@ import {testfn,name} from '../assets/js/test.js';
 
       //testfn();
       //console.log(name)
+      console.log(this)
       var data = [{'name':'wang','age':25 },{'name':'qiang','age':35 }];
        this.$store.dispatch('setdata', data);
        this.$store.dispatch('setApp', 'android');
