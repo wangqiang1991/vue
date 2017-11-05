@@ -7,6 +7,7 @@
 
 <script>
   export default {
+    props:['thisChoice'],
     data() {
        return {
           user:'',
@@ -17,9 +18,10 @@
     },
     mounted :function(){
       //console.log(this.user == '')
-     this.prop =  this.$store.getters.getApp;
-     let data =  this.$store.getters.getData;
-     console.log(data[0].age)
+     //this.prop =  this.$store.getters.getApp;
+     //let data =  this.$store.getters.getData;
+     //console.log(data[0].age)
+     console.log(this.thisChoice == true)
     }
   }
 </script>

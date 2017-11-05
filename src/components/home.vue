@@ -20,8 +20,8 @@
 		      </el-menu-item>
 		      <el-submenu index="2">
 				  <template slot="title"><i class="el-icon-menu"></i>学生管理</template>
-				 <router-link to="/home/addstudent"> <el-menu-item index="2-1">增添学生</el-menu-item></router-link>
-				  <router-link to="/home/update"><el-menu-item index="2-2">修改学生</el-menu-item></router-link>
+				 <router-link  to="/home/addstudent"> <el-menu-item index="2-1">增添学生</el-menu-item></router-link>
+				  <el-menu-item  @click='goto()' index="2-2">修改学生</el-menu-item>
 				  <el-menu-item index="2-3">查询学生</el-menu-item>
 		      </el-submenu>
 		      <el-submenu index="3">
@@ -33,6 +33,7 @@
 		  </el-col>
 		  <el-col :xs="14" :sm="16" :md="18" :lg="20">
 				<router-view></router-view>
+				<Vupdate thisChoice=true></Vupdate>
 		  </el-col>
    </el-row>	
 </div>
@@ -40,18 +41,27 @@
 
 
 <script>
-	import Addstudent from './addstudent.vue'
-
+	import Addstudent from './addstudent.vue';
+	import Update from './update.vue';	
   export default {
   	name:'home',
+  	components:{
+  		Vupdate:Update
+  	},
   	data() {
        return {
           number:0
       }
     },
+    mounted:function(){
+    	console.log(this.$router.history.current.query)
+    },
     methods: {
       handleOpen(key, keyPath) {
         console.log(key, keyPath);
+      },
+      goto(){
+      	console.log(123)
       },
       handleClose(key, keyPath) {
         console.log(key, keyPath);

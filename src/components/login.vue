@@ -20,7 +20,7 @@
 
 <script>
 import axios from 'axios'
-
+//import '../assets/css/login.css';
   export default {
     data() {
        return {
@@ -30,7 +30,7 @@ import axios from 'axios'
       }
     },
     mounted :function(){
-      console.log(this.user == '')
+      console.log(this.$router)
     },
     methods: {
       login:function () {
@@ -50,7 +50,12 @@ import axios from 'axios'
               });
             return false;
         }
-         this.$router.push('/home/addstudent');
+        // this.$router.push('/home/addstudent');
+
+         //this.$router.push({path:'/home', query:{id:123,uid:'tes'} });   //类似get传参，通过URL传递参数
+         
+         this.$router.push({path:'/home', params:{id:456} });   //类似post传参
+
 
         // axios.get('/api/users/get',{
         //      params: {
@@ -86,7 +91,7 @@ import axios from 'axios'
   }
 </script>
 
-<style>
+<style scoped>
   @import '../assets/css/login.css';
 
 
