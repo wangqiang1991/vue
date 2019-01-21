@@ -1,0 +1,114 @@
+<style>
+	.img-item {
+		width: 95%;
+		height: 180px;
+		line-height: 180px;
+		margin-top: 20px;
+		margin-left: 10px;
+		margin-right: 10px;
+		border: 1px #999 dashed;
+		text-align: center; 
+		cursor: pointer;
+		display: inline-block;
+	}
+	.img-item span {
+		display: inline-block;
+	}
+
+	.img-item img {
+		width: 62px; 
+		height: 60px;
+		display: none;
+	}
+
+	.single-image-edit input {
+		width: 300px;
+	}
+
+	.single-image-edit ul > li {
+		margin-bottom: 10px;
+	}
+
+	.single-image-edit ul > li > div{
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.div-title {
+		width: 100%;
+		margin-top: 7px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.span-title-w {
+		color: #aaaaaa;
+		min-width: 85px;
+	    display: inline-block;
+	    text-align: right;
+	}
+
+	.span-title {
+		color: #aaaaaa;
+	}
+	.property-head-title {
+		width: 100%;
+		height: 40px;
+		text-align: center;
+		line-height: 40px;
+		background-image: url("./assets/image/property_bg.png");
+	}
+
+</style>
+
+<div class="single-image-edit" style="width: 100%; height: 100px;">
+
+	<div class="property-head-title">
+		<label style="color: white;">优惠券属性</label>
+	</div>
+
+	<div class="img-item">
+		<span class="uploadDesc" style="font-size: 16px;color: #aaaaaa;">点击上传优惠券图片</span>
+		<img class="img" style="display: none;width: 100%;height: 100%;">
+	</div>
+
+	<div class="div-title" style="margin-top: 10px;">
+		<span class="span-title-w">优惠券名称：</span>
+		<span class="name"></span>
+	</div>
+
+	<div class="div-title" style="margin-top: 10px;">
+		<span class="span-title-w">优惠券类型：</span>
+		<span class="type"></span>
+	</div>
+
+	<div class="div-title" style="margin-top: 10px;">
+		<span class="span-title-w">发行数量：</span>
+		<span class="totalCount"></span>
+	</div>
+
+	<div class="div-title" style="margin-top: 10px;">
+		<span class="span-title-w">使用期限：</span>
+		<span class="useDate"></span>
+	</div>
+
+	<div class="amount_div">
+		<div class="div-title" style="margin-top: 10px;">
+			<span class="span-title-w">使用门槛：</span>
+			<span class="toAmount"></span>
+		</div>
+		<div class="div-title" style="margin-top: 10px;">
+			<span class="span-title-w">抵扣金额：</span>
+			<span class="amount"></span>
+		</div>
+	</div>
+
+	<div class="disCount_div div-title" style="margin-top: 10px;">
+		<span class="span-title-w">折扣：</span>
+		<span class="disCount"></span>
+	</div>
+
+	<div class="div-title" style="margin-top: 10px;">
+		<button type="button" class="btn btn-primary" style="width: 94%;">选择优惠券</button>
+	</div>
+
+</div>

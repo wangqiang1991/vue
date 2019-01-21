@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>立即下载</title>
+  <style>
+    *{
+      margin:0;
+      padding: 0;
+    }
+    #bg{
+      width: 100%;
+      height: 100%;
+      display: block;
+      margin: 0;
+    }
+    img{
+      position: absolute;
+      left: 50%;
+    }
+    body{
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    @media screen and (min-width:500px) and (max-width:1300px){
+        body{
+             background-image: url("http://appsource.goochao.com/bg_pc1280800.png"); 
+        }
+        img{
+          width: 150px;
+          height: 150px;
+          margin-left: -75px;
+          bottom: 50px;
+        }
+        .mobile{
+          display: none;
+        }
+        .pc{
+          display: block;
+        }
+    }
+    @media screen and (min-width:1300px){
+        body{
+            background-image: url("http://appsource.goochao.com/bg_pc1920x1080.png"); 
+        }
+        img{
+          width: 200px;
+          height: 200px;
+          margin-left: -100px;
+          bottom: 100px;
+        }
+        .mobile{
+          display: none;
+        }
+        .pc{
+          display: block;
+        }
+    }
+    @media (max-width: 500px){
+        body{
+            background-image: url("http://appsource.goochao.com/down_load_bg.png"); 
+        }
+        img{
+          width: 200px;
+          height: 75px;
+          margin-left: -100px;
+          bottom: 100px;
+        }
+        .mobile{
+          display: block;
+        }
+        .pc{
+          display: none;
+        }
+    }
+   
+  </style>
+</head>
+<body>
+    <img src="http://appsource.goochao.com/download.png" onclick="goto()" class="mobile">
+    <img src="http://appsource.goochao.com/logo.png" class="pc">
+    <script>
+        var browser = {
+          versions: function() {
+            var u = navigator.userAgent;
+            return {
+                    trident: u.indexOf('Trident') > -1, //IE内核
+                    presto: u.indexOf('Presto') > -1, //opera内核
+                    webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+                    gecko: u.indexOf('Firefox') > -1, //火狐内核Gecko
+                    mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+                    ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios
+                    android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android
+                    iPhone: u.indexOf('iPhone') > -1 , //iPhone
+                    iPad: u.indexOf('iPad') > -1, //iPad
+                    webApp: u.indexOf('Safari') > -1 //Safari
+                };
+            }()
+        }
+
+        function goto() {
+           if (browser.versions.ios) {
+              window.location.href =  "https://itunes.apple.com/app/id1355616191";
+            } else if (browser.versions.android) {
+              window.location.href =  "http://a.app.qq.com/o/simple.jsp?pkgname=com.hande.goochao";
+            } 
+        }
+    </script>
+</body>
+</html>

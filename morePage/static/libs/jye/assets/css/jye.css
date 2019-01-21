@@ -1,0 +1,10 @@
+.jye-dom-selected {
+  margin: -1px !important;
+  margin-bottom: 0px !important;
+  border: 1px #cbbc84 dashed !important;
+  background-color: #f6e8b1 !important;
+}
+.jye-dom-root .jye-dom-row {
+  /* padding-bottom: 1px !important; */
+  background-color: #3c4952;
+}

@@ -1,0 +1,91 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: linear-gradient(-180deg, #525252 0%, #6e6e6e 100%);
+}
+#like_Vue{
+    >p:nth-child(1){
+        font-size: 0.18rem;
+        color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.78rem;
+        font-family: PingFangSC-Regular;
+        letter-spacing: 0;
+        height: 0.25rem;
+        line-height: 0.25rem;
+    }
+    >p:nth-child(2){
+        font-size: 0.24rem;
+        color: #FFFFFF;
+        width: 100%;
+        text-align: center;
+//      margin-top: 0.78rem;
+        font-family: PingFangSC-Medium;
+        letter-spacing: 0;
+        height: 0.33rem;
+        line-height: 0.33rem;
+    }
+    >p:nth-child(3){
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        margin-top: 0.16rem;
+        height: 0.2rem;
+        line-height: 0.2rem;
+    }
+    >p:nth-child(4){
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        height: 0.2rem;
+        line-height: 0.2rem;
+//      margin-top: 0.16rem;
+    }
+    >p:nth-child(5){
+        font-family: PingFangSC-Regular;
+        font-size: 14px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        width: 100%;
+        text-align: center;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        margin-bottom: 0.36rem;
+//      margin-top: 0.16rem;
+    }
+    >.bannerImg{
+        width: 3rem;
+        height: 1.6rem;
+        display: block;
+        margin-left: 0.37rem;
+    }
+    >.Ilike{
+        height: 0.46rem;
+        width: 1.72rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 1rem;
+        color: #FFFFFF;
+        font-size: 0.16rem;
+        font-family: PingFangSC-Medium;
+        letter-spacing: 0;
+        text-align: center;
+        line-height: 0.46rem;
+        margin-top: 0.36rem;
+        margin-left: 1.02rem;
+    }
+    >.cancel{
+        display: block;
+        margin-left: 1.7rem;
+        margin-top: 0.26rem;
+//      position: absolute;
+//      bottom: 0.5rem;
+    }
+}

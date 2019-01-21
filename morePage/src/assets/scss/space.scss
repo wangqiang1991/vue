@@ -1,0 +1,78 @@
+#space{
+
+header{
+	background: #FFFFFF;
+   box-shadow: 0 1px 4px 0 rgba(0,0,0,0.06);
+   width: 100%;
+   height: 0.44rem;
+}
+header a{
+	display: block;
+	width:0.5rem;
+	height:0.44rem;
+	line-height: 0.44rem;
+	position: relative;
+	z-index: 99;
+	float: left;
+}
+header a img{
+	position:absolute;
+	top: 0.1rem;left:0.18rem;
+	height:0.24rem;
+	width:auto;
+}
+header p{
+	position:absolute;
+	font-size: 0.18rem;
+	text-align: center;
+	line-height:0.44rem;
+	height:0.44rem;
+	width:100%;
+    color: #333333;
+}
+.main{
+	width:100%;
+	height:auto;
+	background:#fdfdfd;
+	padding-bottom: 0.1rem;
+}
+.main img{
+	display:block;
+}
+.main>img{
+	width:100%;
+	height:auto;
+}
+.main>div{
+	width:3.5rem;
+	height:auto;
+	margin: 0.16rem auto;
+}
+.main>div p{
+	width:100%;
+	height:auto;
+	font-size: 0.14rem;
+	color: #666666;
+	margin-top:0.1rem;
+}
+.main>div img{
+	width:100%;
+	height:auto;
+	margin-top:0.1rem;
+}
+
+.main>div p.title{
+	font-size:0.18rem;
+	font-weight: 560;
+	margin-top:0;
+}
+.main>div time{
+	margin-top:0.1rem;
+	font-size: 0.12rem;
+	color: #999999;
+	display:block;
+}
+
+
+
+}

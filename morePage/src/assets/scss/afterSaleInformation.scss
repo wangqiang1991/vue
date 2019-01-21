@@ -1,0 +1,307 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background: #F2F2F2;
+}
+
+#afterSaleInformation_Vue {
+    .orderNumberArea {
+        display: flex;
+        align-items: center;
+        width: 3.43rem;
+        height: 0.44rem;
+        padding: 0 0.16rem;
+        background: #FFFFFF;
+        border-bottom: 1px solid #F2F2F2;
+        position: relative;
+        >.orderNumberTitle {
+            font-size: 0.14rem;
+            color: #666;
+            height: 0.44rem;
+            line-height: 0.44rem;
+            display: inline-block;
+            float: left;
+        }
+        >.orderNumber {
+            height: 0.44rem;
+            line-height: 0.44rem;
+            font-size: 0.14rem;
+            color: #999999;
+            float: right;
+        }
+        .sureBtn {
+            border: 1px solid #666;
+            color: #666;
+            font-size: 0.12rem;
+            height: 0.24rem;
+            width: 0.72rem;
+            border-radius: 2px;
+            text-align: center;
+            line-height: 0.24rem;
+            position: absolute;
+            top: 0.09rem;
+            right: 0.16rem;
+        }
+    }
+    .process {
+        width: 3.43rem;
+        height: auto;
+        padding: 0 0.16rem 0.16rem 0.16rem;
+        background: #f2f2f2;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .content {
+        width: 3.43rem;
+        height: 0.6rem;
+        position: relative;
+        overflow: hidden;
+        >div {
+            margin-left: 0.25rem;
+            width: 3.18rem;
+            height: 0.6rem;
+            color: #666;
+            p {
+                height: 0.25rem;
+                width: 100%;
+                padding-top: 0.1rem;
+                line-height: 0.25rem;
+                padding-bottom: 0.05rem;
+                font-size: 0.14rem;
+                color: #666666;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            time {
+                width: 100%;
+                font-size: 0.12rem;
+                color: #666666;
+                display: inline-block;
+                float: left;
+            }
+        }
+    }
+    .line {
+        position: absolute;
+        width: 0.12rem;
+        height: 100%;
+        top: 0;
+        left: 0.05rem;
+        >span {
+            display: block;
+            width: 1px;
+            background: #75cb53;
+            margin-left: 0.05rem;
+        }
+        span.line_top {
+            height: 0.18rem;
+        }
+        span.line_bottom {
+            height: 0.3rem;
+        }
+        >i {
+            display: block;
+            width: 0.12rem;
+            height: 0.12rem;
+            border-radius: 50%;
+            background-image: url("../../assets/img/logistical_image.png");
+            background-size: 100%;
+        }
+    }
+    .content:first-child {
+        span.line_top {
+            background: #F2F2F2;
+        }
+    }
+    .content:last-child {
+        span.line_bottom {
+            background: #F2F2F2;
+        }
+    }
+    .productBox {
+        width: 3.43rem;
+        height: 1.12rem;
+        padding: 0 0.16rem;
+        background: #FFFFFF;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 1px solid #F2F2F2;
+        >.productPicBox {
+            width: 0.8rem;
+            height: 0.8rem;
+            //background: #F2F2F2;
+            margin-top: 0.16rem;
+            position: relative;
+            display: inline-block;
+            float: left;
+            >img {
+                width: 85%;
+                height: 85%;
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 80%;
+            }
+        }
+        >.productRight {
+            width: 2.47rem;
+            height: 0.8rem;
+            display: inline-block;
+            float: right;
+            margin-top: 0.16rem;
+            >.productTitle {
+                font-size: 0.14rem;
+                color: #343434;
+                font-weight:700;
+                height: 0.2rem;
+                line-height: 0.2rem;
+                width: 2.2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                margin-bottom:0.04rem;
+            }
+            >.productSize {
+                font-size: 0.12rem;
+                color: #999999;
+                height: 0.17rem;
+                line-height: 0.17rem;
+                width: 2.2rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                >span{
+                    display:block;
+                    padding:0.03rem 0.08rem;
+                    float: left;
+                    background:#f6f6f6;
+                    margin-right:0.06rem;
+                }
+            }
+            >.productPrice {
+                font-size: 0.14rem;
+                color: #999;
+                height: 0.2rem;
+                line-height: 0.2rem;
+                margin-top: 0.23rem;
+                overflow:hidden;
+                >span{
+                    display:block;
+                    float:right;
+                }
+                >span:first-child{
+                    float:left;
+                    color:#343434;
+                    font-weight:700;
+                }
+            }
+        }
+    }
+    .returnPriceArea {
+        height: 0.44rem;
+        width: 3.43rem;
+        padding: 0 0.16rem;
+        background: #FFFFFF;
+        display: block;
+        overflow: hidden;
+        border-bottom: 1px solid #F2F2F2;
+        >.returnPriceTitle {
+            height: 0.44rem;
+            line-height: 0.44rem;
+            font-size: 0.16rem;
+            color: #666;
+            float: left;
+        }
+        >.returnPrice {
+            height: 0.44rem;
+            line-height: 0.44rem;
+            font-size: 0.16rem;
+            color: #666;
+            float: right;
+        }
+        p.returnover {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .message_box{
+        width:3.43rem;
+        padding:0.1rem 0.16rem;
+        word-break:break-all;
+        background: #FFFFFF;
+        font-size:0.16rem;
+        color:#666;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .returnReasonArea {
+        width: 3.43rem;
+        height: 0.7rem;
+        padding: 0 0.16rem;
+        background: #FFFFFF;
+        display: inline-block;
+        float: left;
+        padding-bottom: 0.1rem;
+        >.returnReasonTitle {
+            height: 0.44rem;
+            line-height: 0.44rem;
+            font-size: 0.16rem;
+            color: #333333;
+            //          display: inline-block;
+            //          float: left;
+        }
+        >.returnReason {
+            font-size: 0.14rem;
+            color: #999999;
+            //          display: inline-block;
+            //          float: left;
+        }
+    }
+    #orderNumber_p {
+        display: flex;
+        align-items: center;
+        height: 0.3rem
+    }
+    #copy_content {
+        width: 150px;
+        border: none;
+        outline: none;
+        background: #fff;
+        color: #333;
+        font-size: 0.14rem;
+        padding: 0;
+    }
+    #copy_btn {
+        >img {
+            width:0.28rem;
+            height: 0.28rem;
+            display: flex;
+        }
+    }
+    #imges{
+        background: white;
+        height: 1.2rem;     
+        >p {
+            color: #333333;
+            font-size: 0.16rem;
+            text-indent: 0.17rem;
+            padding-top: 0.1rem;
+        }
+        #returnPicture {
+            width: 2.5rem;
+            height: 0.84rem;           
+            >img {
+                width: 0.64rem;
+                height: 0.66rem;
+                padding-bottom: 0.1rem;
+                padding-left: 0.17rem;
+            }
+        }
+    }
+}

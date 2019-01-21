@@ -1,0 +1,65 @@
+#canvas {
+  width: 600px;
+  height: auto;
+  position: relative;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+}
+#canvas img{
+  width: 100%;
+  height: 100%;
+}
+.my_goods {
+  cursor:move;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 5px;
+  line-height: 45px;
+  width: 45px;
+  height: 45px;
+  /*border-radius: 20px;*/
+  /*background-color: chartreuse;*/
+
+}
+
+.gm_tag {
+  background-image: url(/static/images/tags/gm.png);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+}
+
+.gm_s_tag {
+  background-image: url(/static/images/tags/gm_s.png);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+}
+
+.dz_tag {
+  background-image: url(/static/images/tags/dz.png);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+}
+
+.dz_s_tag {
+  background-image: url(/static/images/tags/dz_s.png);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+}
+
+.my_goods span {
+  cursor:pointer;
+  position: absolute;
+  display: inline-block;
+  background-color: red;
+  border-radius: 15px;
+  float: right;
+  color: #FFFFFF;
+  top: -5px;
+  right: -5px;
+  width: 15px;
+  height: 15px;
+  line-height: 12px;
+  text-align: center;
+}

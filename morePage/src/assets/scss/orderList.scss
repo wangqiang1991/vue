@@ -1,0 +1,376 @@
+body,html{
+    background: #F2F2F2;
+    height: 100%;
+    width: 100%;
+    .mint-msgbox{
+        .mint-msgbox-header{
+            display:none;
+        }
+        .mint-msgbox-message{
+            font-weight:600;
+        }
+        .mint-msgbox-content{
+            padding:30px 32px;
+        }   
+        .mint-msgbox-cancel{
+            color:#cacaca;
+            font-size:14px;
+            font-weight:600;
+        }
+        .mint-msgbox-confirm{
+            font-size:14px;
+            color:#4a90e2;
+            font-weight:600;
+        }
+    }
+}
+#orderList_Vue {
+    
+    input{
+        outline: none;
+    }
+    
+    .widget-tab input[type=radio] {
+        display: none
+    }
+    .widget-tab .widget-box ul {
+        display: none
+    }
+    #all:checked~.widget-title .all,
+    #waitPay:checked~.widget-title .waitPay,
+    #waitSend:checked~.widget-title .waitSend,
+    #waitGet:checked~.widget-title .waitGet,
+    #waitAppraise:checked~.widget-title .waitAppraise, 
+    #afterSale:checked~.widget-title .afterSale{
+        border-bottom: 2px solid #333333;
+        color: #333333;
+        font-weight: bold;
+    }
+    #all:checked~.widget-box .all-list,
+    #waitPay:checked~.widget-box .waitPay-list,
+    #waitSend:checked~.widget-box .waitSend-list,
+    #waitGet:checked~.widget-box .waitGet-list,
+    #waitAppraise:checked~.widget-box .waitAppraise-list,
+    #afterSale:checked~.widget-box .afterSale-list {
+        display: block
+    }
+    .tabs{
+        width: 100%;
+        height: 0.44rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+    }
+    .tabs ul{
+        width: 100%;
+        height: 0.44rem;
+        font-size: 0.16rem;
+        background: #FFFFFF;
+        color: #666666;
+        overflow:hidden;
+        padding: 0;
+        margin: 0;
+//      box-shadow: 0 1px 4px 0 rgba(0,0,0,0.10);
+    }
+    .tabs ul li{
+        width: 0.75rem;
+        float:left;
+        height: 0.44rem;
+        line-height: 0.44rem;
+        text-align: center;
+        margin: 0;
+        background: #FFFFFF;
+        box-sizing: border-box;
+    }
+    .spaceArea{
+        width: 100%;
+        height: 0.44rem;
+        background: #2E3033;
+    }
+
+    .widget-box{
+        width: auto;
+        height: auto;
+    }
+    .widget-box ul{
+        width: auto;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .widget-box ul li{
+        width: 3.75rem;
+        background: #FFFFFF;
+    }
+    .contentBox{
+       height: auto;
+       width: 3.75rem;
+       position: relative;
+       font-size: 14px;
+       border-bottom: 10px solid #F2F2F2;
+    }
+    .contentBoxMain{
+        padding-top:0.2rem;
+        width:100%;
+        height:auto;
+        >div{
+            width:100%;
+            height:auto;
+            overflow:hidden;
+            margin-bottom: 0.15rem;
+
+        }
+
+    }
+    .contentBoxTitle{
+        font-size: 0.12rem;
+        color: #333333;
+        padding-left: 0.16rem;
+        padding-top:0.16rem;
+        margin-bottom:0.1rem;
+    }
+    .productPic {
+        float:left;
+        margin-right:0.15rem;
+        margin-left:0.16rem;
+        //background: #F2F2F2;
+        width: 0.8rem;
+        height: 0.8rem;
+        line-height:1.08rem;
+        overflow:hidden;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .productPic img {
+        width: 85%;
+        height: 85%; 
+        //height:auto;
+    }
+    .productIntr{
+        width:2.53rem;
+        height:auto;
+        float:left;
+    }
+    .box-right{
+        width: 2.4rem;
+        height: 1.08rem;
+        float: right;
+        margin-top: 0.43rem;
+        position: relative;
+    }
+    .productTitle {
+        font-size: 0.14rem;
+        color:#343434;
+        font-weight:700;
+        height: auto;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .productSize {
+        display:block;
+        left: 1.40rem;
+        color: #999999;
+        font-size: 0.14rem;
+        height: auto;
+        max-width: 2.2rem;
+        margin-top:0.05rem;
+        overflow: hidden;
+        >span{
+            display:block;
+            padding:0.03rem 0.08rem;
+            float: left;
+            background:#f6f6f6;
+            margin-right:0.06rem;
+        }
+    }
+    .priceDiv{
+        width:100%;
+        height:auto;
+        overflow:hidden;
+        margin-top:0.2rem;
+    }
+    .productPrice {
+        color: #333333;
+        font-size: 0.14rem;
+        float:left
+    }
+    .productNum {
+        font-size: 0.14rem;
+        float: right;
+        color:#999;
+    }
+    .shoppingCartPay{
+        width: 3.43rem;
+        height: 0.46rem;
+        background: #FFFFFF;
+//      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+//      border-radius: 4px;
+        position: fixed;
+        bottom: 0.16rem;
+        left: 0.16rem;
+    }
+    .contentBoxService{
+        font-size: 0.12rem;
+        color: #333333;
+    }
+    .contentBoxService1{
+        width: 3.43rem;
+        margin:auto;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        margin-bottom:0.05rem;
+    }
+    .productNum2{
+        width:3.43rem;
+        margin:auto;
+        overflow:hidden;
+        margin-bottom:0.15rem;
+    }
+    .contentBoxBtn{
+        height: 0.4rem;
+        width: 3.43rem;
+        overflow:hidden;
+        padding-top: 0.1rem;
+        margin:auto;
+        border-top: 1px solid #F2F2F2;
+        >div{
+            float:left;
+            >p{ 
+                height:0.26rem;
+                line-height:0.26rem;
+                width:auto;
+                padding:0;
+                margin:0;
+                color:#666;
+                font-size:0.14rem;
+            }
+        }
+        >p{
+            border-radius:2px;
+        }
+    }
+    .contentBoxBtn p{
+        height: 0.24rem;
+        width: 0.72rem;
+        font-size: 0.12rem;
+        background-color: #FFFFFF;
+        float: right;
+        text-align: center;
+        line-height: 0.24rem;
+    }
+    .btn{
+        position: absolute;
+        right: 0;
+        bottom: 0.16rem;
+        width: 2.5rem;
+    }
+    .payBtn{
+        border: 1px solid #333333;
+        color: #333333;
+        margin-left: 0.1rem;
+    }
+    .cancelBtn{
+        border: 1px solid #333333;
+    }
+    .returnBtn{
+        border: 1px solid #333333;
+        float: right;
+    }
+    .contentBoxBtn p.returnBtn1{
+        background:#999;
+        border: 1px solid #999;
+        color:#fff;
+    }
+    .sureGetBtn{
+        border: 1px solid #333333;
+        color: #333333;
+    }
+    .afterSaleBtn{
+        border: 1px solid #333333;
+        float: right;
+//      margin-right: 0.1rem;
+    }
+    .checkAfterSaleBtn{
+        border: 1px solid #333333;
+        float: right;
+//      margin-right: 0.1rem;
+    }
+    .deleteBtn{
+        border: 1px solid #333333;
+        float: right;
+        margin-right: 0.1rem;
+    }
+    .appraiseBtn{
+        border: 1px solid #333333;
+        color: #333333;
+        margin-left: 0.1rem;
+    }
+    .productNumber{
+        font-size: 0.14rem;
+        color:#666;
+        font-weight:700;
+        >span{
+            font-weight:400;
+            font-size:0.1rem;
+        }
+    }
+    .productPrice2{
+        font-size: 0.14rem;
+        color: #333333;
+        float:right;
+    }
+    .end{
+        height: 0.3rem;
+        background-color: #F2F2F2;
+        line-height: 0.3rem;
+        font-size: 0.12rem;
+        color: #999999;
+        text-align: center;
+        >.emptyOrder{
+            width: auto;
+            height: 1.4rem;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            >img{
+                width: 1rem;
+                height: 1rem;
+                display: block;
+                margin: 0 auto 0.1rem auto;
+            }
+            >p{
+//              position: absolute;
+//              left: 0;
+//              top: 1.1rem;
+                margin-top: 0.1rem;
+                width: 100%;
+                font-size: 0.14rem;
+            }
+        }
+    }
+    .load{
+        width:100%; 
+        height:0.5rem;
+        display:flex;
+        align-items: center;
+        background:#F2F2F2;
+        >span{
+            width:100%;
+            display:block;
+            text-align:center;
+        }
+        div{
+        width:0.5rem;
+        margin:auto;
+        height:0.5rem;
+        display:flex;
+        align-items: center;
+     }
+    }
+}

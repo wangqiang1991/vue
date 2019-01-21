@@ -1,0 +1,23 @@
+#menu_vue{
+	 
+  position: fixed;
+	z-index: 99;
+	color: #999999;
+ 	left:0;
+ 	bottom:0;
+
+.mint-tab-item-label{
+	font-size: 12px;
+   }
+.mint-tab-item-icon{
+	width: 24px;
+	height: 24px;
+	margin:0 auto;
+	padding-bottom: 0.05rem;
+}   
+.active{
+	color:#333333;
+}
+
+
+}

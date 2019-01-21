@@ -1,0 +1,547 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    background: #F2F2F2;
+}
+#appraiseWait_Vue{
+     header {
+        background: #FFFFFF;
+//      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+        width: 100%;
+        height: 0.44rem;
+        position: relative;
+    }
+    header .back {
+        position: absolute;
+        top: 0.1rem;
+        left: 0.18rem;
+        height: 0.24rem;
+        width: auto;
+    }
+    header .customerService{
+        position: absolute;
+        top: 0.1rem;
+        right: 0.18rem;
+        height: 0.24rem;
+        width: auto;
+    }
+    header p {
+        font-size: 0.18rem;
+        text-align: center;
+        line-height: 0.44rem;
+        height: 0.44rem;
+        width: 100%;
+        color: #333333;
+    }
+    .waitAppraise{
+        height: 0.92rem;
+        width: 100%;
+        background: #34495e;
+//      background: linear-gradient(90deg, #333333 0%, #333333 100%);
+        position: relative;
+    }
+    .waitAppraiseContent{
+        padding-top: 0.2rem;
+        margin-left: 0.16rem;
+        overflow:hidden;
+    }
+    .waitAppraise p:first-child{
+        font-size: 0.18rem;
+        color: #FFFFFF;
+        display: inline-block;
+        float: left;
+        font-weight:700;
+        margin-bottom:0.05rem;
+    }
+    .waitAppraise .content{
+        font-weight:700;
+        font-size: 0.12rem;
+        color: #FFFFFF;
+        display: inline-block;
+        float: left;
+//      margin-top: 0.22rem;
+        position: absolute;
+        top: 0.5rem;
+        left: 0.16rem;
+    }
+    .consigneeInformation .order_line{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+//      top: 0.38rem;
+//      right: 0.16rem;
+    }
+    .waitAppraise .appraise{
+        color: #FFFFFF;
+        font-size: 0.12rem;
+        height: 0.24rem;
+        width: 0.72rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+        text-align: center;
+        line-height: 0.24rem;
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 0.34rem;
+        right: 0.16rem;
+    }
+    .waitAppraise .afterSale{
+        color: #FFFFFF;
+        font-size: 0.12rem;
+        height: 0.24rem;
+        width: 0.72rem;
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+        text-align: center;
+        line-height: 0.24rem;
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 0.34rem;
+        right: 0.16rem;
+    }
+    .consigneeInformation {
+        height: 0.92rem;
+        width: 100%;
+        background: #FFFFFF;
+        position: relative;
+    }
+    .consigneeInformation p:first-child {
+        padding-top: 0.25rem;
+        margin-left: 0.16rem;
+        font-size: 0.14rem;
+        color: #333333;
+        width: 3.43rem;
+        margin-bottom: 0.06rem;
+        margin-top: 0;
+    }
+    .consigneeInformation .order_line{
+        width: 100%;
+        height: auto;
+        position: absolute;
+        bottom: 0;
+//      top: 0.38rem;
+//      right: 0.16rem;
+    }
+    .consigneeInformation p {
+        margin-top: 0.1rem;
+        margin-left: 0.16rem;
+        font-size: 0.12rem;
+        color: #333333;
+        width: 3.43rem;
+    }
+    .consigneeInformation .line{
+        width: 0.02rem;
+        height: 0.6rem;
+        position: absolute;
+        top: 0.16rem;
+        left: 0.16rem;
+    }
+    .pay{
+        width: 100%;
+        height: auto;
+        background: #FFFFFF;
+//      border-bottom:1px solid #F2F2F2;
+        position: fixed;
+        left: 0;
+        bottom: 1.45rem;
+    }
+    .payInformation{
+        height: auto;
+        padding: 0 0.16rem;
+        border-bottom:1px solid #F2F2F2;
+    }
+    .payInformation p{
+        font-size: 0.12rem;
+        height: 0.17rem;
+        line-height: 0.17rem;
+        color: #666666;
+    }
+    .payInformation p:first-child{
+        padding-top: 0.08rem;
+    }
+    .payInformation p:last-child{
+        font-size: 0.14rem;
+        color: #333333;
+        padding-bottom: 0.08rem;
+    }
+    .payInformation p:last-child span:last-child{
+        color: #333333;
+    }
+    .payInformation p span:last-child{
+        float: right;
+    }
+     .widget-tab input[type=radio] {
+        display: none;
+    }
+    .widget-tab .widget-box ul {
+        display: none;
+    }
+    #parcel1:checked~.widget-title .parcel1,
+    #parcel2:checked~.widget-title .parcel2{
+        color: #333333;
+    }
+    #parcel1:checked~.widget-box .parcel1-list,
+    #parcel2:checked~.widget-box .parcel2-list {
+        display: block;
+    }
+    .tabs{
+        width: 100%;
+        height: 2rem;
+    }
+    .tabs ul{
+        width: 100%;
+        height: 0.44rem;
+        font-size: 0.16rem;
+        color: #666666;
+        float: left;
+        padding: 0;
+        margin: 0;
+    }
+    .tabs ul li{
+        width: 0.70rem;
+        display: inline-block;
+        height: 0.44rem;
+        line-height: 0.44rem;
+        text-align: center;
+        margin: 0;
+    }
+    .widget-box {
+        
+    }
+    .widget-box ul{
+        width: 3.43rem;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 0.1rem;
+    }
+    .widget-box ul li{
+        height: auto;
+        width: 3.43rem;
+        position: relative;
+    }
+    .box{
+        width: 3.43rem;
+        height: 1.4rem;
+        background: #FFFFFF;
+        position: relative;
+        left: 0.16rem;
+        margin-bottom: 0.2rem;
+        margin-top:0.2rem;
+//      box-shadow: 0 1px 4px 0 rgba(0,0,0,0.10);
+    }
+    .productPic {
+        background: #F2F2F2;
+//      border-radius: 4px;
+        width: 1.08rem;
+        height: 1.08rem;
+        top: 0.16rem;
+        left: 0.16rem;
+        position: absolute;
+        text-align: center;
+        display: table;
+    }
+    .productPic span{
+        width: 1.08rem;
+        height: 1.08rem;
+        position: absolute;
+        left: 0;
+    }
+    .productPic img {
+        width: 85%;
+        height: 85%;
+        position: absolute;  
+        margin: auto;  
+        top: 0;  
+        right: 0;  
+        bottom: 0;  
+        left: 0;
+//      display: inline-block;
+    }
+    .box-right{
+        width: 2.1rem;
+        height: 1.08rem;
+        float: right;
+        margin-top: 0.16rem;
+        position: relative;
+    }
+    .productTitle {
+        font-size: 0.14rem;
+        height: auto;
+        max-width: 2.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .productSize {
+        left: 1.40rem;
+        color: #999999;
+        font-size: 0.14rem;
+        height: auto;
+        margin-top: 0.05rem;
+        max-width: 2.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .productPrice {
+        color: #333333;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 0.14rem;
+    }
+    .productNum {
+        position: absolute;
+        bottom: 0;
+        right: 0.16rem;
+        font-size: 0.14rem;
+    }
+    .orderInformation{
+        width: 3.75rem;
+        height: auto;
+        background: #FFFFFF;
+        position:fixed;
+        left:0; bottom:0;
+        padding-top:0.05rem;
+        padding-bottom:0.2rem;
+    }
+    .orderInformation p{
+        padding-left:0.16rem;
+        font-size: 0.12rem;
+        display: block;
+        height: 0.2rem;
+        line-height: 0.2rem;
+        color: #999999;
+    }
+    #orderNumber_p{
+        display:flex;
+        align-items:center;
+        height:0.3rem
+    }
+     #copy_content,#copy_content1{
+        width:130px;
+        border:none;
+        outline:none;
+        background:#fff;
+        color:#999;
+        font-size:0.12rem;
+        padding: 0;
+        text-align:right;
+        overflow:hidden;
+    }
+
+    
+
+
+
+    .addressMessage{
+        background:white;
+        >div{
+            width:3.4rem;
+            height:0.95rem;
+            padding-left:0.15rem;
+            padding-right:0.2rem;
+            display:flex;
+            align-items:center;
+            >img{
+                width:0.24rem;
+                height:0.24rem;
+                display:block;
+                margin-right:0.15rem;
+            }
+            >div{
+                width:3.01rem;
+                height:auto;
+                >b{ display:block;
+                    font-size:0.16rem;
+                    color:#343434;
+                    margin-bottom:0.03rem;
+                }
+                >span{
+                    display:block;
+                    width:100%;
+                    color:#999;
+                    font-size:0.14rem;
+                }
+            }
+        }
+    }
+    .remark{
+        width:100%;
+        height:0.55rem;
+        background:white;
+        display:flex;
+        align-items:center;
+        >img{
+           display:block;
+           width:0.24rem;
+           height:0.24rem;
+           margin-left:0.15rem;
+           margin-right:0.15rem;  
+        }
+        >p{
+            height:0.54rem;
+            width:3.01rem;
+            line-height: 0.54rem;
+            color:#999;
+            font-size:0.14rem;
+            border-top: 0.01rem solid #ddd;
+            overflow: hidden;
+            text-overflow:ellipsis;
+            white-space: nowrap;
+        }
+    }
+    .content_box{
+        width:100%;
+        height:auto;
+        overflow:hidden;
+        padding-bottom:1.2rem;
+    }
+    .goods_message{
+        background:white;
+        width:3.35rem;
+        height:auto;
+        margin:0.15rem auto 0;
+        padding-top:0.2rem;
+        padding-bottom:0.2rem;
+        padding-left:0.1rem;
+        padding-right:0.1rem;
+        border-bottom:1px solid #ddd;
+        >div.goods_box{
+            width:3.35rem;
+            height:0.8rem;
+            overflow:hidden;
+            >.left{
+                width:0.8rem;
+                height:0.8rem;
+                //background:#F2F2F2;
+                margin-right:0.15rem;
+                float:left;
+                position:relative;
+                >img{
+                    width:85%;
+                    height:85%;
+                    display:block;
+                    position: absolute;
+                    margin: auto;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    left: 0;
+                }
+            }
+            >.right{
+                float:left;
+                width:2.4rem;
+                height:0.8rem;
+                position:relative;
+                font-size:0.14rem;
+                color:#343434;
+                >.title{
+                   margin-bottom:0.04rem; 
+                   font-weight:700;
+                }
+                >.style{
+                    overflow:hidden;
+                    color: #999999;
+                    font-size: 0.12rem;
+                    >span{
+                        display:block;
+                        padding:0.03rem 0.08rem;
+                        float: left;
+                        background:#f6f6f6;
+                        margin-right:0.06rem;
+                    }
+                }
+                >.price{
+                    overflow:hidden;
+                    position:absolute;
+                    left:0;
+                    bottom:0;
+                    width:100%;
+                    >span:first-child{
+                        float:left;
+                        color:#343434;    
+                    }   
+                    >span:last-child{
+                        float:right;
+                        color:#999;
+                    }
+                }
+            }
+        }
+    }
+    .goods_pay_message{
+        background:white;
+        color:#999;
+        font-size:0.12rem;
+        width:3.25rem;
+        height:auto;
+        margin: auto ;
+        padding-top:0.1rem;
+        padding-bottom:0.1rem;
+        padding-left:0.15rem;
+        padding-right:0.15rem;
+        >p{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            width:100%;
+            height:0.24rem;
+            overflow:hidden;
+            >span{
+                display:block;
+                height:0.24rem;
+                line-height:0.24rem;
+                >img{
+                    display:block;
+                    width:0.24rem;
+                    height:0.24rem;
+                    float:left;
+                }
+            }
+        }
+        >p.goods_amount{
+            font-size:0.14rem;
+            color:#666;
+        }
+    }
+    .goods_money_message{
+        position:fixed;
+        left:0.1rem;
+        bottom:0.1rem;
+        background:white;
+        color:#999;
+        font-size:0.14rem;
+        width:3.25rem;
+        height:auto;
+        margin: auto ;
+        padding-top:0.1rem;
+        padding-bottom:0.1rem;
+        padding-left:0.15rem;
+        padding-right:0.15rem;
+        border-radius:2px;
+        >p{
+            overflow:hidden;
+            width:100%;
+            margin-bottom:0.05rem;
+            >span{
+                display:block;
+                float:right;
+            }
+            >span:first-child{
+                float:left;
+            }
+        }
+        >p:last-child{
+            margin-bottom:0;
+            color:#343434;
+        }
+    }
+
+
+}

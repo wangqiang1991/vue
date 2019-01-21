@@ -1,0 +1,58 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #F2F2F2;
+}
+#PaySuccess_Vue{
+    img{
+        margin-left: 1.35rem;
+        margin-top: 1.64rem;
+        display: block;
+    }
+    .content1{
+        color: #2BA245;
+        height: 0.3rem;
+        line-height: 0.3rem;
+        font-size: 0.25rem;
+        text-align: center;
+        margin-top: 1.8rem;
+    }
+    .content2{
+        color: #666666;
+        height: 0.25rem;
+        line-height: 0.25rem;
+        font-size: 0.16rem;
+        text-align: center;
+        margin-top: 0.1rem;
+    }
+    .checkOrder{
+        width: 0.86rem;
+        height: 0.26rem;
+        background: #333333;
+        color: #FFFFFF;
+        font-size: 0.12rem;
+        line-height: 0.26rem;
+        text-align: center;
+        position: absolute;
+        left: 0.97rem;
+        top: 2.7rem;
+//      border-radius: 4px;
+    }
+    .backToHome{
+        width: 0.86rem;
+        height: 0.26rem;
+        background: #FFFFFF;
+        color: #333333;
+        font-size: 0.12rem;
+        line-height: 0.26rem;
+        display: inline-block;
+        text-align: center;
+        border: 1px solid #333333;
+        position: absolute;
+        right: 0.97rem;
+        top: 2.7rem;
+//      box-sizing: border-box;
+//      border-radius: 4px;
+        box-sizing: border-box;
+    }
+}

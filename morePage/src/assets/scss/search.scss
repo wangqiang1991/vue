@@ -1,0 +1,135 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+    #search_Vue{
+        .searchBox{
+            width: 100%;
+            height: 0.44rem;
+//          box-shadow: 0 1px 4px 0 rgba(0,0,0,0.06);
+            position: relative;
+//          >.backBtn{
+//              display: inline-block;
+//              float: left;
+//              margin-left: 0.18rem;
+//              margin-top: 0.11rem;
+//              width: 4%;
+//          }
+            >.cancel{
+                color: #333333;
+                font-size: 0.14rem;
+                display: inline-block;
+                float: left;
+                margin-top: 0.15rem;
+                padding-left: 0.08rem;
+            }
+            >input{
+                display: inline-block;
+                float: left;
+                margin-left: 0.08rem;
+                margin-top: 0.07rem;
+                width: 2.7rem;
+                height: 0.3rem;
+                width: 2.56rem;
+                height: 0.3rem;
+//              border-radius: 4px;
+                background: #EEEEEE;
+                border: none;
+                outline: none;
+                padding-left: 0.25rem;
+                color: #999999;
+                font-size: 0.14rem;
+                line-height: 0.3rem;
+            }
+            .searchBtn{
+                position: absolute;
+                left: 0.5rem;
+                top: 0.15rem;
+                width: 4%;
+            }
+            .offBtn{
+                position: absolute;
+                right: 0.5rem;
+                top: 0.15rem;
+                width: 4%;
+            }
+            .sureBtn{
+                color: #333333;
+                font-size: 0.14rem;
+                display: inline-block;
+                float: right;
+                background: #333333;
+                width: 0.4rem;
+                height: 0.3rem;
+                margin-top: 0.07rem;
+                margin-right: 0.08rem;
+                text-align: center;
+                line-height: 0.3rem;
+//              border-radius: 4px;
+                color: #FFFFFF;
+            }
+        }
+    .searchHistory{
+        width: 3.4rem;
+        height: 1rem;
+        margin-top: 0.01rem;
+//      border: 1px solid red;
+        margin: 0.16rem 0.16rem 0.16rem 0.16rem;
+        position: relative;
+        >.title{
+            color: #333333;
+            font-size: 0.16rem;
+        }
+        >img{
+            width: 5%;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .searchContent{
+            height: 0.24rem;
+            line-height: 0.24rem;
+            width: auto;
+            max-width: 2rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #333333;
+            background: #F2F2F2;
+            font-size: 0.14rem;
+            padding: 0 0.1rem;
+            float: left;
+//          border-radius: 4px;
+            margin-top: 0.1rem;
+            margin-right: 0.1rem;
+        }
+    }
+    .hotSearch{
+        width: 3.4rem;
+        height: 1rem;
+        margin-top: 0.01rem;
+//      border: 1px solid red;
+        margin: 0.16rem 0.16rem 0.16rem 0.16rem;
+        >.title{
+            color: #333333;
+            font-size: 0.16rem;
+        }
+        .searchContent{
+            height: 0.24rem;
+            line-height: 0.24rem;
+            width: auto;
+            max-width: 2rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #333333;
+            background: #F2F2F2;
+            font-size: 0.14rem;
+            padding: 0 0.1rem;
+            float: left;
+//          border-radius: 4px;
+            margin-top: 0.1rem;
+            margin-right: 0.1rem;
+        }
+    }
+}

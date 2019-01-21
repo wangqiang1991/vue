@@ -1,0 +1,163 @@
+html{
+  background:#f2f2f2;
+  width:3.75rem;
+  height:100%;
+}
+#planActivity_vue{
+  width: 3.75rem;
+  #content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
+    width:100%;
+    .plan_cover{
+      display:block;
+      width:3.75rem;
+      height:2.24rem;
+    }
+    .houseType_box{
+      width:100%;
+      height:auto;
+      position:absolute;
+      top:2.24rem; left:0;
+      >.houseType_content{
+        width:100%;
+        height:auto;
+        position:absolute;
+        top:-0.25rem; left:0;
+        .houseType{
+          width:3.45rem;
+          height:auto;
+          margin:auto;
+          background:white;
+          padding-top:0.25rem;
+          padding-bottom:0.15rem;
+          border-radius:0.05rem;
+          box-shadow:0 2px 3px 0 #ddd;
+          p.plan_title{
+            font-size:0.16rem;
+            text-align:center;
+            color:#343434;
+            font-weight:700;
+          }
+          .house_message{
+            width:100%;
+            height:auto;
+            overflow:hidden;
+            margin-top: 0.22rem;
+            margin-bottom:0.15rem;
+            padding:0;
+            >li{
+              width:25%;
+              height:auto;
+              float:left;
+              >img{
+                width:0.24rem; height:0.24rem;
+                display:block;
+                margin:auto;
+              }
+              >p{
+                font-size:0.08rem;
+                text-align:center;
+                color:#343434;
+                margin-top:0.04rem;
+                margin-bottom:0.1rem;
+              }
+              >p.house_detail{
+                font-size:0.1rem;
+                color:#999;
+                margin:0;
+              }
+            }
+          }
+          .planImage{
+            width:100%;
+            height:auto;
+            margin-bottom:0.02rem;
+            display:block;
+          }
+          .planImage_title{
+            font-size:0.1rem;
+            color:#999;
+            text-align:center;
+
+          }
+        }
+
+        .user_box{
+          width:3.35rem;
+          height:auto;
+          background:white;
+          margin:0.05rem auto;
+          border-radius:0.05rem;
+          padding-top:0.3rem;
+          padding-bottom:0.15rem;
+          input.phone_input{
+            display:block;
+            width:2.2rem;
+            height:0.36rem;
+            color:#cacaca;
+            border-radius:0.05rem;
+            margin:auto;
+            font-size:0.14rem;
+            outline:none;
+            border:1px solid #cacaca;
+            padding-left: 0.1rem;
+            text-align:center;
+            background:#f2f2f2;
+          }
+          input::-webkit-input-placeholder {
+            font-size:0.14rem;
+            color:#cacaca;
+          }
+          p.receive_gift{
+            width:1.2rem;
+            height:0.32rem;
+            border-radius: 0.03rem;
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            color:white;
+            font-size:0.14rem;
+            background:#343434;
+            margin:0.2rem auto 0.23rem;
+            font-weight: 700;
+          }
+          p.receive_success{
+            text-align:center;
+            font-size:0.2rem;
+            color:#EED176;
+          }
+
+          p.tip{
+            width:100%;
+            height:auto;
+            text-align:center;
+            font-size:0.12rem;
+            color:#cacaca;
+          }
+
+        }
+
+        .bottom_logo{
+          width:100%;
+          height:auto;
+          padding:0.23rem 0;
+          >img{
+            display:block;
+            width:1.7rem;
+            height:0.24rem;
+            margin:auto;
+          }
+        }
+      }
+    }
+
+
+
+
+
+
+  }  
+}

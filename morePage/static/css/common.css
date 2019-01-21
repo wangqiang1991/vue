@@ -1,0 +1,126 @@
+html{
+    font-family: "PingFangSC-Regular" , "Helvetica Neue" , "Helvetica";
+    background:#fff; 
+  }
+body,html{
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;  /*解决安卓机卡顿问题*/
+    margin: 0;
+    -webkit-tap-highlight-color:transparent; /*解决苹果机点击出现高亮背景问题*/
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none; /*解决长按出现选中文本问题*/
+  }
+li{
+  list-style: none;
+}
+p{
+  margin: 0;
+}
+h3,h4{
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+img[lazy=loading] {
+ /*your style here*/
+ opacity: 0.5;
+}
+img[lazy=error] {
+ /*your style here*/
+ opacity: 1;
+}
+img[lazy=loaded] {
+ /*your style here*/
+ opacity: 1;
+ transition: opacity 0.3s;
+}
+
+html i.icon-defeat{
+  display: none;
+}
+html i.icon-defeat + span {
+  padding-top: 0 !important;
+}
+.icon-success{
+  width:30px;
+  height:30px;
+  background-image: url('/static/images/success.png');
+  background-size: 100%;
+  margin:auto;1
+}
+.icon-error{
+  width:30px;
+  height:30px;
+  background: url('/static/images/defeat.png');
+  background-size: 100%;
+  margin:auto;
+}
+body div.mint-toast{
+  background: #fff;
+  padding:0.1rem 0.25rem !important;
+  border-radius: 5px;
+  color: #666;
+  font-size:0.14rem;
+  box-shadow: 0 1px 4px 0 #cacaca;
+}
+body div.mint-toast i{
+  width:0.3rem;
+  height:0.3rem;
+  margin: auto;
+}
+body div.mint-toast span{
+  font-size: 0.14rem;
+}
+
+.mint-indicator{
+  position:absolute;
+  z-index:500;
+}
+.mint-indicator-wrapper{
+  padding:0.15rem !important;
+  display:block;
+}
+.mint-indicator-wrapper>span{
+  display:block;
+}
+.mint-indicator-wrapper>span>div{
+    margin:auto;
+}
+
+.mint-indicator-text{
+  margin-top:0.15rem;
+}
+
+/*#root_dom{*/
+ /* width: 3.65rem;
+  margin: auto;*/
+ /* line-height: 25px;*/
+  /*color: #333;*/
+  /*font-family:'Microsoft YaHei';*/
+/*}*/
+/*.content>.jye-dom-row h3{
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+.content>.jye-dom-row img{
+  display: block;
+  width: 100%;
+}
+.content>.jye-dom-row span{
+  font-size: 16px;
+}
+.content>.jye-dom-row p{
+  overflow: hidden;
+  height: auto;
+}
+
+.content>.jye-dom-row strong{
+  height:26px;
+  display: flex;
+  float: left; 
+}*/

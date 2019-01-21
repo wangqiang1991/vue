@@ -1,0 +1,155 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #F2F2F2;
+}
+#PublishCommentaries_Vue{
+    .lightUpStar{
+        width: 100%;
+        height: 0.96rem;
+        background: #FFFFFF;
+        position: relative;
+        margin-bottom: 0.1rem;
+        >.title{
+            height: 0.25rem;
+            line-height: 0.25rem;
+            color: #333333;
+            font-size: 0.19rem;
+            padding-top: 0.16rem;
+            padding-left: 0.16rem;
+            display: block;
+            font-weight: bold;
+        }
+        >.content{
+            font-size: 0.14rem;
+            color: #333333;
+            padding-left: 0.16rem;
+            padding-top: 0.13rem;
+        }
+        >.starBox{
+            width: 1.8rem;
+            height: 0.3rem;
+            position: absolute;
+            font-size: 0;
+            top: 0.5rem;
+            left: 1.9rem;
+//          line-height: 0.3rem;
+            >img{
+//              float: left;
+//              display: inline-block;
+//              width: 15%;
+//              margin-right: 0.06rem;
+            }
+            >.star-item{
+                display: inline-block;
+                background-repeat: no-repeat;
+                width: 15%;
+                height: 100%;
+                float: left;
+                margin-right: 0.06rem;
+                background-size: 100%;
+            }
+            >.star-item.on{
+                width:0.2rem;
+                height:0.2rem;
+                background-size:100%;
+                background-image:url(../../assets/img/icon_star_select.png) ;
+            }
+            >.star-item.off{
+                width:0.2rem;
+                height:0.2rem;
+                background-size:100%;
+                background-image:url(../../assets/img/icon_star_default.png) ;
+            }
+        }
+    }
+    .commentArea{
+        width: 100%;
+        height: 1.3rem;
+        background: #FFFFFF;
+        margin-bottom: 0.1rem;
+        >textarea{
+            font-size: 0.14rem;
+            color: #333333;
+            width: 3.55rem;
+            height: 100%;
+            padding:0.1rem;
+            border: none;
+            outline: none;
+            resize: none;
+        }
+    }
+    .addPic{
+        width: 3.59rem;
+        height: 0.9rem;
+        background: #FFFFFF;
+        padding-left: 0.16rem;
+        >ul{
+            padding: 0;
+            margin: 0;
+//          margin-left: 0.16rem;
+            >li{
+                position:relative;
+                width: 0.58rem;
+                height: 0.58rem;
+                float: left;
+                margin-right: 0.1rem;
+                margin-top: 0.1rem;
+                >img{
+                    display: inline-block;
+                    float: left;
+                    width:100%;
+                    height:100%;
+                }
+                >i{
+                    display:block;
+                    width:0.2rem;
+                    height:0.2rem;
+                    position:absolute;
+                    top:-0.2rem;left:0.38rem;
+                    padding:0.1rem;
+                    >img{
+                        display:block;
+                        width:100%;
+                        height:100%;
+                    }
+                }
+            }
+        }
+        >.editPic{
+//          width: 100%;
+//          height: 0.68rem;
+//          padding-left: 0.16rem;
+            >img{
+                width:0.64rem;
+                height:0.64rem;
+                display: inline-block;
+                float: left;
+                margin-right: 0.1rem;
+                margin-top: 0.1rem;
+//              margin-left: 0.16rem;
+//              margin-bottom: 0.1rem;
+            }
+        }
+    }
+    .maxPic{
+        font-size: 0.12rem;
+        color: #999999;
+        margin-top: 0.1rem;
+        margin-left: 0.16rem;
+    }
+    .submitBtn{
+        width: 3.43rem;
+        height: 0.46rem;
+        background: #333333;
+//      border-radius: 4px;
+//      box-shadow: 0 1px 4px 0 rgba(0,0,0,0.10);
+        position: fixed;
+        left: 0.16rem;
+        bottom: 0.16rem;
+        color: #FFFFFF;
+        font-size: 0.16rem;
+        line-height: 0.46rem;
+        text-align: center;
+    }
+}

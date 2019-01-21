@@ -1,0 +1,242 @@
+body,html{
+    width: 100%;
+    height: 100%;
+}
+#ccdetail2_vue{
+    .shopwindowBanner{
+        width: 100%;
+        height: 1.72rem;
+        position: relative;
+        overflow: hidden;
+        >.windowBg{
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+        }
+        >.bannerTitle{
+            font-size: 0.24rem;
+            color: #FFFFFF;
+            position: absolute;
+            top: 0.2rem;
+            left: 0.16rem;
+            z-index: 101;
+            font-weight: bold;
+        }
+        >.bannerIntroduceTitle{
+            font-size: 0.14rem;
+            color: #FFFFFF;
+            position: absolute;
+            left: 0.16rem;
+            top: 0.63rem;
+            z-index: 101;
+        }
+        >.bannerIntroduce{
+            font-size: 0.12rem;
+            color: #FFFFFF;
+            position: absolute;
+            left: 0.16rem;
+            top: 0.87rem;
+            width: 2rem;
+            text-overflow: -o-ellipsis-lastline;  
+            overflow: hidden;  
+            text-overflow: ellipsis;  
+            display: -webkit-box;  
+            -webkit-line-clamp: 2; //这儿的数字代表的就是你所需要实现效果的第N行  
+            -webkit-box-orient: vertical;
+            z-index: 101;
+        }
+        >.learnMore{
+            font-size: 0.12rem;
+            color: #FFFFFF;
+            position: absolute;
+            left: 0.16rem;
+            bottom: 0.26rem;
+            text-decoration: underline ;
+            z-index: 101;
+        }
+    }
+    .mengban{
+        background: rgba(0,0,0,0.30);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100%;
+        height: 1.72rem;
+    }
+
+    #backHome{
+        position: fixed;
+        right: 0.16rem;
+        top: 0.16rem;
+        width: 0.4rem;
+        height: 0.4rem;
+        z-index: 110;
+    }
+
+    
+    .picList{
+        padding-left: 0;
+        padding-bottom:0.03rem;
+        margin: 0;
+        margin-top: 0.03rem;
+        .imgactive{
+                transform:scale(0.95,0.95);
+            }
+        >li{
+            margin-bottom: 0.03rem;
+            margin-left: 0.03rem;
+            position: relative;
+            width: 3.69rem;
+            height: 3.69rem;
+//          border-radius: 4px;
+//          box-shadow: 0 1px 4px 0 rgba(0,0,0,0.10);
+            transition:all linear 100ms;
+            transform:scale(1,1);
+            >img{
+                position: absolute;
+                margin: auto;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 3.69rem;
+                height: 3.69rem;
+//              border-radius: 4px;
+//              box-shadow: 0 1px 4px 0 rgba(0,0,0,0.10);
+               
+            }
+           
+            >div{
+                width:100%;
+                position:absolute;
+                left:0; bottom:0.1rem;
+                height:0.2rem;
+                overflow:hidden;
+                font-size:0.14rem;
+                p{
+                    color:#fff;
+                    float:left;
+                    margin-left:0.16rem;
+                }
+                p.biaoqian{
+                    float:right;
+                    margin-right:0.16rem;
+                    height:0.2rem;
+                    display:flex;
+                    align-items: center;
+                    >img{
+                        margin-right:4px;
+                        width: 0.14rem;
+                        height: 0.14rem;
+                    }
+                }
+            }
+        }
+    }
+    // .picList{
+    //     padding-left: 0;
+    //     padding-bottom:0.2rem;
+    //     margin: 0;
+    //     margin-top: 0.16rem;
+    //     .imgactive{
+    //       transform:scale(0.95,0.95);
+    //     }
+    //     >li{
+    //         margin-bottom: 0.2rem;
+    //         margin-left: 0.16rem;
+    //         position: relative;
+    //         width: 3.59rem;
+    //         height: auto;
+    //         overflow:hidden;
+    //         .title{
+    //             width:100%;
+    //             font-size: 0.16rem;
+    //             color: #333333;
+    //             margin-bottom:0.06rem;
+    //         }
+    //         .biaoqian{
+    //             margin-top:0.06rem;
+    //             margin-bottom:0.1rem;
+    //             color:#999;
+    //             font-size:0.12rem;
+    //         }
+    //         >img{
+    //             display:block;
+    //             width: 3.43rem;
+    //             height: 3.43rem;
+    //             border-radius: 4px;
+    //             box-shadow: 0 1px 4px 0 rgba(0,0,0,0.10);
+    //             transition:all linear 100ms;
+    //             transform:scale(1,1);
+    //         }
+    //         .goods{
+    //             width:3.59rem;
+    //             overflow-x:scroll;
+    //             height:1.08rem;
+    //             margin-top:0.2rem;
+
+    //             div.showDiv{
+    //                 width:2.8rem;
+    //                 position:relative;
+    //                 height:1.08rem;
+    //                 overflow:hidden;
+    //                 float:left;
+    //                 margin-right:0.3rem;
+    //                 .left{
+    //                    width:1.08rem;
+    //                    height:1.08rem;
+    //                    float:left;
+    //                    >img{
+    //                     width:100%;
+    //                     height:100%;
+    //                     display:block;
+    //                     box-shadow: 0 1px 4px 0px rgba(92, 92, 92, 0.5);
+    //                    } 
+    //                 }
+    //                 .right{
+    //                     float:right;
+    //                     width:1.56rem;
+    //                     height:1.08rem;
+    //                     position:relative;
+    //                     p{
+    //                        font-size:0.16rem; 
+    //                     }
+    //                     p.goodstitle{
+    //                         color:#333;
+    //                         font-weight: bold;
+    //                         margin-bottom:0.1rem;
+    //                     }
+    //                     p.goodsprice{
+    //                         color:#333333;
+    //                         font-weight: bold;
+    //                     }
+    //                     p.goodsbuy{
+    //                         position:absolute;
+    //                         left:0;bottom:0;
+    //                         font-size: 0.14rem;
+    //                         padding: 0.05rem;
+    //                         height: 0.2rem;
+    //                         line-height: 0.2rem;
+    //                         background-image: -webkit-gradient(linear, left top, right top, from(#333333), to(#ffa0a0));
+    //                         background-image: linear-gradient(to right, #333333, #ffa0a0);
+    //                         color: white;
+    //                         border-radius: 0.2rem;
+    //                         width: 0.8rem;
+    //                         text-align: center;
+    //                         box-shadow: 0 1px 4px 1px rgba(92, 92, 92, 0.2);
+    //                     }
+
+    //                 }
+    //             }
+    //             div.showDiv:last-child{
+    //                 margin-right:0
+    //             }
+    //         }
+    //     }
+    // }
+}

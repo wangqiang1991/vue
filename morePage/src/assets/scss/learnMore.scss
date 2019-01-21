@@ -1,0 +1,170 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+}
+#learnMore_Vue{
+
+    .designersBox{
+        width: 3.35rem;
+        height:auto;
+        padding:0.25rem 0.2rem;
+        background:#fff;
+        overflow: hidden;
+        div.userMeg{
+            width:100%;
+            height:0.6rem;
+            overflow: hidden;
+            div.userNmae{
+                margin-top:.1rem ;
+                float:left;
+                width:2rem;
+                height:0.6rem;
+                
+                p{
+                    color:#343434;
+                    font-size:0.2rem;
+                    font-weight:700;
+                    height:0.28rem;
+                    line-height: 0.28rem;
+                }
+            }
+        }
+        div.starBox{
+            width: 2rem;
+            height: auto;
+            >.star-item{
+                display: block;
+                width: 0.15rem;
+                height: 0.15rem;
+                float: left;
+                margin-right: 0.05rem;
+                background-size: 100%;
+            }
+            >.star-item.on{
+                background-image:url(../../assets/img/icon_star_choice.png) ;
+            }
+            >.star-item.off{
+                background-image:url(../../assets/img/icon_star_default.png) ;
+            }
+        }
+        div.designersHeader{
+            width:0.6rem;
+            height:0.6rem;
+            float:right;
+            >img{
+                border: 0.01rem solid #ddd;
+                display:block;
+                width:0.58rem;
+                height:0.58rem;
+                border-radius:50%;
+            }
+        }
+    }
+    div.designersInformation{
+        width:100%;
+        height:auto;
+        overflow: hidden;
+        margin-top:0.1rem;
+        >span{
+            color:#343434;
+            font-size: 0.12rem;
+            float:left;
+            margin-right:0.1rem;
+        }
+        >p{
+            width:2.2rem;
+            height:auto;
+            font-size:0.12rem;
+            color:#666;
+            float:left;
+            line-height: 0.17rem;
+        }
+        ul{
+            margin:0;
+            padding:0;
+            width:2.2rem;
+            height:auto;
+            float:left;
+            overflow: hidden;
+            >li{
+                float:left;
+                padding:0.02rem 0.08rem;
+                background:#343434;
+                border-radius:0.05rem;
+                color:#fff;
+                font-size:0.12rem;
+                margin-right: 0.08rem;
+            }
+        }
+    }
+    
+    div.imgBox{
+        width:3.35rem;
+        height:auto;
+        overflow: hidden;
+        padding:0.15rem 0.2rem 0;
+        p.myWorkTitle{
+            margin-bottom:0.15rem;
+            color:#343434;
+            font-size:0.18rem;
+            font-weight:700;
+        }
+        ul{
+            margin:0 0 0.2rem;
+            padding:0;
+            width:100%;
+            height:auto;
+            overflow: hidden;
+            li{
+                width:1.08rem;
+                height:1.08rem;
+                margin-right:0.04rem;
+                margin-bottom:0.04rem;
+                float:left;
+                position: relative;
+                >img{
+                    display:block;
+                    width:100%;
+                    height:100%;
+                    border-radius:2px;
+                }
+                >div{
+                    position: absolute;
+                    top:0;left:0;
+                    width:100%;
+                    height:100%;
+                    background:rgba(255,255,255,.7);
+                    text-align:center;
+                    line-height: 1.08rem;
+                    color:#343434;
+                    font-size:0.12rem;
+                    display:none;
+                }
+            }
+            li:nth-child(3n){
+                margin-right:0;
+            }
+            li:last-child{
+                div{
+                    display:block;
+                }
+            }
+        }
+    }
+
+    #load {
+        width: 3.42rem;
+        clear: both;
+        padding-top: 0.2rem;
+        padding-bottom:0.2rem;
+    }
+    #load div {
+        width: 0.6rem;
+        margin: auto;
+        line-height: 0.6rem;
+        display: flex;
+        align-items: center;
+    }
+
+}

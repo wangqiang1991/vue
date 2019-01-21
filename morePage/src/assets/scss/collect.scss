@@ -1,0 +1,529 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    .mint-msgbox{
+        .mint-msgbox-header{
+            display:none;
+        }
+        .mint-msgbox-message{
+            font-weight:600;
+        }
+        .mint-msgbox-content{
+            padding:30px 32px;
+        }   
+        .mint-msgbox-cancel{
+            color:#cacaca;
+            font-size:14px;
+            font-weight:600;
+        }
+        .mint-msgbox-confirm{
+            font-size:14px;
+            color:#f98484;
+            font-weight:600;
+        }
+    }
+}
+#collect_Vue{
+    height: 100%;
+    width: 100%;
+    header {
+        background: #FFFFFF;
+//      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+        width: 100%;
+        height: 0.44rem;
+    }
+    header img {
+        position: absolute;
+        top: 0.1rem;
+        left: 0.18rem;
+        height: 0.24rem;
+        width: auto;
+    }
+    header p {
+        font-size: 0.18rem;
+        text-align: center;
+        line-height: 0.44rem;
+        height: 0.44rem;
+        width: 100%;
+        color: #333333;
+    }
+    .content{
+    }
+    .content .widget-box ul{
+        margin: 0;
+        padding: 0;
+    }
+
+    .product{
+        padding-bottom:0.1rem;
+        width: 100%;
+        overflow:hidden;
+        height: auto;
+    }
+    .product1{
+          padding-top: 0.1rem;
+          padding-bottom:0.1rem;
+          width: 1.86rem;
+          height: auto;
+          overflow:hidden;
+          float: left;
+          margin-right:0;
+          border-right:1px solid #f2f2f2;
+          border-bottom:0.01rem solid #f2f2f2;
+        >div{
+           width: 100%;
+           height: auto;
+            >img{
+                width: 1.41rem;
+                height: 1.41rem;
+                display:block;
+                margin:0 auto;
+                transition:all linear 100ms;
+                transform:scale(1,1);
+            }
+            .imgactive{
+              transform:scale(0.95,0.95);
+            }
+            >div{
+               margin-top:0.1rem; 
+               padding-right:0.2rem;
+               width:1.46rem;
+               margin-left:0.2rem;
+               height:auto;
+               position:relative;
+               p{   
+                    width:100%;
+                    margin-top:0;
+                    text-align:left;
+                    font-size: 0.14rem;
+                    font-weight:700;
+                    color: #333333;
+                    overflow: hidden;
+                    text-overflow:ellipsis;
+                    white-space: nowrap;
+                    margin-bottom:0.03rem;    
+                }
+                p.goodsPrice{
+                    font-size:0.12rem;
+                    font-weight:600;
+                }
+                p.style{
+                    color:#c2c2c2;
+                    font-weight:400;
+                    font-size:0.13rem;
+                }
+            }
+        }
+    }
+    .product1:nth-child(even){
+         border-right:0;
+    }
+
+    .productBox{
+        width: 1.66rem;
+        height: 2rem;
+        margin: 0;
+        background: #F2F2F2;
+//      box-shadow: 0 2px 4px 0 rgba(0,0,0,0.10);
+        text-align: center;
+//      border-radius: 4px;
+        position: relative;
+    }
+ 
+    .deletePro{
+        width: 0.24rem;
+        height:0.24rem;
+        display: block;
+        position:absolute;
+        right:0.1rem; bottom:-0.05rem;
+    }
+    .productName{
+        font-size: 0.16rem;
+        color: #333333;
+        margin-top: 0.08rem;
+        width: 1.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .pro-list .productPrice{
+        font-size: 0.16rem;
+        color: #333333;
+        width: 1.2rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        height:0.42rem;
+        margin:0.05rem 0 0;
+    }
+    .pro-list {
+     .goods_discount,.goods_amount{
+        overflow: hidden;
+        height:0.42rem;
+        margin:0.05rem 0 0;
+        >p{
+          font-size:0.14rem;
+          color:#343434;
+          font-weight:700;
+          span{
+            font-size:0.1rem;
+            color:#999;
+            text-decoration:line-through;
+          }
+        }
+      }
+      .goods_discount{
+        div.goods_tag{
+          background:#f94e4e;
+          padding:0.01rem 0.05rem;
+          font-size:0.08rem;
+          color:#fff;
+          float:left;
+        }
+      }
+      .goods_amount{
+        div.goods_tag{
+          border:1px solid #f94e4e;
+          padding:0.01rem 0.05rem;
+          font-size:0.08rem;
+          color:#f94e4e;
+          float:left;
+        }
+      }
+    }
+    .editPic{
+        font-size: 0.14rem;
+        color: #333333;
+        float: right;
+        display: block;
+        margin-right: 0.16rem;
+        margin-top: 0.08rem;
+    }
+    .picture{
+//      padding-bottom:0.1rem;
+        width: 100%;
+        height: auto;
+        margin-top: 0.04rem;
+        overflow:hidden;
+//      width: auto;
+//      height: auto;
+//      padding: 0.30rem 0.16rem 0.16rem 0.16rem;
+    }
+    .picture1{
+        width: auto;
+        height: auto;
+        float: left;
+//      display: inline-block;
+//      box-shadow: 0 3px 4px 0 rgba(0,0,0,0.10);
+//      border-radius: 4px;
+//      margin-top: -0.17rem;
+        margin-bottom: 0.04rem;
+        transition:all linear 100ms;
+        transform:scale(1,1);
+    }
+    .imgactive{
+        transform:scale(0.95,0.95);
+    }
+    .picture1:nth-child(1){
+//      z-index: 2000;
+    }
+    .picture1:nth-child(even){
+        width: 1.855rem;
+        height: 1.855rem;
+        display: inline-block;
+//      border-radius: 4px;
+        float: right;
+//      box-shadow: 0 3px 4px 0 rgba(0,0,0,0.10);
+    }
+    .pictureBox{
+        width: 1.21rem;
+        height: 1.21rem;
+        margin: 0 0.05rem 0.05rem 0;
+        position: relative;
+//      border-radius: 4px;
+    }
+    .pictureBox:nth-child(3n){
+        margin-right:0;
+//      border-radius: 4px;
+    }
+    .editStatus{
+            position: absolute;
+            width: 20%;
+            top: 0.05rem;
+            right: 0.05rem;
+    }
+    .pictureBox .collectPic{
+        width: 100%;
+        height: 100%;
+        display:block;
+        //margin: auto;
+//      border-radius: 4px;
+       
+    }
+
+    .deletePicArea{
+        width: 1.855rem;
+        height: 0.26rem;
+//      background: rgba(0,0,0,0.2);
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+    .pictureBox .deletePicBtn{
+        position: absolute;
+        width: 0.36rem;
+        height:0.36rem;
+        bottom: 0;
+        right: 0;
+    }
+    .articles{
+        width: 3.35rem;
+        padding-left:0.2rem;
+        padding-right:0.2rem;
+        margin-bottom:0.16rem;
+        height: auto;
+        position: relative;
+//      padding: 0.16rem 0.16rem 0.16rem 0.16rem;
+        .articlesBox{
+            width: 100%;
+            height: auto;
+            position: relative;
+            >.articlePicBox{
+                width: 100%;
+                height: 1.7rem;
+//              background: red;
+                position: relative;
+//              border-radius: 3px;
+                >img{
+                    display:block;
+                    width:100%;
+                    height:100%;
+//                  border-radius: 3px;
+                }
+                >p{
+                    width:auto;
+                    height:auto;
+                    position: absolute;
+                    right:0.2rem;
+                    bottom:0.1rem;
+                    background:rgba(255,255,255,0.5);
+                    font-size:.1rem;
+                    padding: 0.02rem 0.05rem;
+                    color:#fff;
+                    border-radius: 2px;
+                }
+            }
+            >p.artTitle{
+               width:3.15rem;
+                padding:0.1rem;
+                background:#f6f6f6;
+                font-size:0.16rem;
+                font-weight:700;
+                color:#333;
+            }
+            .artContent{
+                font-size: 0.12rem;
+                color: #999999;
+                margin-left: 1.25rem;
+                width: 2.3rem;
+                max-height: 0.28rem;
+                line-height: 0.14rem;
+                margin-top: 0.04rem;
+                overflow:hidden; 
+                text-overflow:ellipsis;
+                display:-webkit-box; 
+                -webkit-box-orient:vertical;
+                -webkit-line-clamp:2;
+//              overflow: hidden;
+//              text-overflow:ellipsis;
+//              white-space: nowrap;
+            }
+        }
+    }
+    .deleteArea{
+        position: absolute;
+        right: 0.1rem;
+        bottom: 0.1rem;
+        width: 0.6rem;
+        height: 0.2rem;
+        >.deleteArtBtn{
+            position: absolute;
+            right: 0.1rem;
+            bottom: 0rem;
+            width: 0.24rem;
+            height:0.24rem;
+        }
+        >span{
+            position: absolute;
+            font-size: 0.12rem;
+            position: absolute;
+            right: 0.1rem;
+            bottom: 0.01rem;
+            color: #999999;
+        }
+    }
+    .widget-tab input[type=radio] {
+        display: none;
+    }
+    .widget-tab .widget-box ul {
+        display: none;
+    }
+    #pic:checked~.widget-title .pic,
+    #art:checked~.widget-title .art,
+    #pro:checked~.widget-title .pro{
+        color: #000;
+        border-bottom: 2px solid #333333;
+        background:#fff;
+    }
+    #pic:checked~.widget-box .pic-list,
+    #art:checked~.widget-box .art-list,
+    #pro:checked~.widget-box .pro-list {
+        display: block;
+        color:#666;
+        overflow:hidden;
+    }
+    #picture_box{
+        >li{
+            width:3.55rem;
+            padding-left:0.1rem;
+            padding-right:0.1rem;
+            padding-top:0.16rem;
+            height:auto;
+            overflow:hidden;
+            >img{
+                width:1.15rem;
+                height:1.15rem;
+                margin-right:0.05rem;
+                margin-bottom: 0.05rem;
+                display:block;
+                float:left;
+            }
+            >img:nth-child(3n){
+                margin-right:0;
+            }
+        }
+    }
+    .tabs{
+        width: 100%;
+        height: 0.44rem;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+//      margin-bottom: 0.44rem;
+    }
+    .tabs ul{
+        width: 100%;
+        height: 0.44rem;
+        font-size: 0.16rem;
+        color: #666666;
+        overflow:hidden;
+        padding: 0;
+        margin: 0;
+        background: #FFFFFF;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .tabs ul li{
+        width: 33%;
+        display:block;
+        float:left;
+        height: 0.44rem;
+        line-height: 0.44rem;
+        text-align: center;
+        margin: 0;
+        box-sizing: border-box;
+        z-index: 99;
+    }
+//  .tabs ul li:nth-child(2){
+//      border-right: 1px solid #F2F2F2;
+//      border-left: 1px solid #F2F2F2;
+//  }
+    .widget-box {
+//      margin-top: 0.44rem;
+        background: #F2F2F2;
+    }
+    .widget-box ul{
+        width: auto;
+        height: auto;
+        background: #FFFFFF;
+    }
+    .widget-box ul li{
+        width: auto;
+        height: auto;
+    }
+    .spaceArea{
+        width: 100%;
+        height: 0.44rem;
+        background: #fff;
+    }
+    .mengban{
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.50);
+//      z-index: 999;
+        position: fixed;
+        left: 0;
+        top: 0;
+    }
+    .firstPic{
+        width: 1.66rem;
+        height: 1.66rem;
+        background: rgba(255,255,255,0.5);
+        position: absolute;
+        left: 0.16rem;
+        top: 0.57rem;
+//      border-radius: 4px;
+    }
+    .line{
+        margin-left: 1.9rem;
+        margin-top: 1.8rem;
+        >img{
+            display: inline-block;
+        }
+        >p{
+            margin-left:-0.66rem;
+            color: #FFFFFF;
+            font-size: 0.16rem;
+        }
+    }
+    .close{
+        margin-left: 1.7rem;
+        margin-top: 0.16rem;
+        >img{
+            display: inline-block;
+            float: left;
+        }
+    }
+    .emptyArea{
+        width: auto;
+        height: 1.4rem;
+        text-align: center;
+//      float: left;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+//      margin-top: 1.55rem;
+//      margin-left: 1.025rem;
+        >.emptyPic{
+            width: 1rem;
+            height: 1rem;
+            display: block;
+            margin: 0 auto 0.1rem auto;
+//          margin-left: 1.3rem;
+//          margin-top: 1.6rem;
+        }
+        >p{
+//          position: absolute;
+//          left: 0;
+//          top: 1.1rem;
+            width: 100%;
+            font-size: 0.14rem;
+            color: #999999;
+//          text-align: center;
+        }
+    }
+}

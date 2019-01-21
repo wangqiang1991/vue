@@ -1,0 +1,293 @@
+body,
+html {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F2F2;
+}
+
+#members_Vue {
+    .main {
+        background: #FFFFFF;
+        width: 3.43rem;
+        height: auto;
+        padding: 0 0.16rem 0 0.16rem;
+    }
+    .titleNumber {
+        width: 100%;
+        height: 0.44rem;
+        line-height: 0.44rem;
+        border-bottom: 1px solid #F2F2F2;
+        font-size: 0.16rem;
+        color: #333333;
+    }
+    .header {
+        height: 0.65rem;
+        width: 100%;
+        border-bottom: 1px solid #F2F2F2;
+        line-height: 0.65rem;
+        >.headerTitle {
+            font-size: 0.14rem;
+            color: #333333;
+            display: inline-block;
+            float: left;
+        }
+        >#photo {
+            width: 0.5rem;
+            height: 0.5rem;
+//          background: red;
+            border: none;
+            border-radius: 100%;
+            display: inline-block;
+            margin-top: 0.075rem;
+            margin-right: 0.1rem;
+            float: right;
+            position: relative;
+            >img {
+                position: absolute;
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 100%;
+                border: none;
+            }
+            >img[src='']{
+                opacity: 0;
+            }
+        }
+        >.right {
+            width: 2.5%;
+            float: right;
+            margin-top: 0.225rem;
+        }
+        >#imgInput {
+            width: 3.43rem;
+            height: 0.65rem;
+            position: absolute;
+            //          top: 0;
+            left: 0.16rem;
+            opacity: 0;
+            z-index: 100;
+        }
+    }
+    .nickNameBox {
+        width: 100%;
+        height: 0.44rem;
+        line-height: 0.44rem;
+        border-bottom: 1px solid #F2F2F2;
+        >.nickNameTitle {
+            font-size: 0.14rem;
+            color: #333333;
+            display: inline-block;
+            float: left;
+        }
+        >.right {
+            width: 2.5%;
+            float: right;
+            margin-top: 0.135rem;
+        }
+        >.nickNameContent {
+            float: right;
+            color: #999999;
+            font-size: 0.12rem;
+            margin-right: 0.1rem;
+        }
+    }
+    .genderBox {
+        width: 100%;
+        height: 0.44rem;
+        line-height: 0.44rem;
+        border-bottom: 1px solid #F2F2F2;
+        >.genderTitle {
+            font-size: 0.14rem;
+            color: #333333;
+            display: inline-block;
+            float: left;
+        }
+        >.right {
+            width: 2.5%;
+            float: right;
+            margin-top: 0.135rem;
+        }
+        >.genderContent {
+            float: right;
+            color: #999999;
+            font-size: 0.12rem;
+            margin-right: 0.1rem;
+        }
+    }
+    .birthdayBox {
+        width: 100%;
+        height: 0.44rem;
+        line-height: 0.44rem;
+        border-bottom: 1px solid #F2F2F2;
+        >.birthdayTitle {
+            font-size: 0.14rem;
+            color: #333333;
+            display: inline-block;
+            float: left;
+        }
+        >.right {
+            width: 2.5%;
+            float: right;
+            margin-top: 0.135rem;
+        }
+        >.birthdayContent {
+            float: right;
+            color: #999999;
+            font-size: 0.12rem;
+            margin-right: 0.1rem;
+        }
+    }
+    .cd-popup2 {
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s 0s, visibility 0s 0.3s;
+        z-index: 300;
+    }
+    .is-visible2 {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s 0s, visibility 0s 0s;
+    }
+    .cd-popup-container2 {
+        position: fixed;
+        background: #F2F2F2;
+        width: 100%;
+        height: 100%;
+        transform: translateY(60px);
+        transition-property: transform;
+        transition-duration: 0.3s;
+    }
+    .cd-popup-container1 {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: #FFFFFF;
+        width: 100%;
+        height: 2.93rem;
+        transform: translateY(60px);
+        transition-property: transform;
+        transition-duration: 0.3s;
+    }
+    .is-visible2 .cd-popup-container2 {
+        transform: translateY(0);
+    }
+    .changeHeader{
+        width: 100%;
+        height: 0.44rem;
+        line-height: 0.44rem;
+        text-align: center;
+        border-bottom: 1px solid #F2F2F2;
+        position: relative;
+        background: #FFFFFF;
+        >.title{
+            font-size: 0.16rem;
+            color: #333333;
+            display: block;
+        }
+        >.cancel{
+            font-size: 0.14rem;
+            color: #999999;
+            position: absolute;
+            left: 0.1rem;
+            top: 0;
+        }
+        >.sure{
+            font-size: 0.14rem;
+            color: #999999;
+            position: absolute;
+            right: 0.1rem;
+            top: 0;
+        }
+    }
+    .nickNameArea{
+        position: relative;
+        width: 100%;
+        height: 0.46rem;
+        background: #FFFFFF;
+    }
+    .nickNameInput{
+        width: 3.55rem;
+        height: 0.46rem;
+        display: block;
+        padding: 0 0.1rem 0 0.1rem;
+        margin: 0;
+        color: #333333;
+        font-size: 0.12rem;
+        border: none;
+        border-bottom: 1px solid #F2F2F2;
+        outline: none;
+    }
+    .offBtn{
+        width: 5%;
+        display: block;
+        position: absolute;
+        top: 0.13rem;
+        right: 0.1rem;
+    }
+    .prompting{
+        color: #999999;
+        font-size: 0.1rem;
+        padding-left: 0.1rem;
+        margin-top: 0.1rem;
+    }
+    .changeGenderContent{
+        position: relative;
+        width: 100%;
+        height: 0.88rem;
+        background: #FFFFFF;
+        >.choiceGenderBox{
+            height: auto;
+            width: 100%;
+            position: relative;
+            >p{
+                width: 3.65rem;
+                height: 0.44rem;
+    //          padding: 0 0 0 0.1rem;
+                margin-left: 0.1rem;
+                border-bottom: 1px solid #F2F2F2;
+                font-size: 0.12rem;
+                color: #333333;
+                line-height: 0.44rem;
+            }
+            >img{
+//                  float: right;
+//                  margin-right: 0.1rem;
+//                  margin-top: 0.12rem;
+                    position: absolute;
+                    top: 0.15rem;
+                    right: 0.12rem;
+                    width: 3%;
+                    display: inline-block;
+                }
+        }
+    }
+    .mint-popup{
+        display: block !important;
+    }
+    .mint-datetime-cancel{
+        width: 0.4rem;
+        color: #999999;
+        float: left;
+        font-size: 0.14rem;
+        padding-left: 0.1rem;
+    }
+    .mint-datetime-confirm{
+        width: 0.4rem;
+        color: #999999;
+        float: right;
+        font-size: 0.14rem;
+        padding-right: 0.1rem;
+    }
+    .mint-datetime-picker{
+        height: 2.93rem;
+        margin-bottom: 0.5rem;
+    }
+}

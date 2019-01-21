@@ -1,0 +1,137 @@
+#classify_vue{
+	
+.main{
+	height: 100%; 
+    overflow: hidden;
+    position: fixed;
+    z-index: 10;
+    top: 0.5rem;
+    bottom: 82px;
+    width: 100%;
+    background-color: #f2f2f2;
+}
+.left{
+	width: 0.92rem;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 132px;
+}
+.right{
+	float: right;
+    position: absolute;
+    overflow-y: scroll;
+    width: 2.83rem;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-bottom: 132px;
+}
+
+
+.left div{
+	background-color: #FFFFFF;
+    width: 100%;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    text-align: center;
+    border-bottom: 1px solid #f2f2f2;
+    font-size: 0.14rem;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+//  box-shadow: 0 0 4px 0 rgba(92,92,92,0.12);
+}
+.left div.goods_active{
+	background: #F2F2F2;
+    color: #333;
+//  box-shadow: 0 0 4px 0 rgba(92,92,92,0.12);
+    border-left: 4px solid #333333;
+}
+.right div.banner{
+    width:2.52rem;
+    height:1rem;
+    margin: 0.1rem auto;
+}
+.banner img{
+    width: 100%;
+    height: 100%;
+}
+.banner .mint-swipe-indicators{
+    bottom: 0.05rem;
+    height:0.1rem;
+    display: flex;
+    align-items: center;
+}
+.mint-swipe-indicator{
+    width: 0.12rem;
+    height: 0.02rem;
+    opacity: 1;
+    border-radius: 0;
+    background: #999;
+}
+.banner .mint-swipe-indicator.is-active{
+    background: #fff;
+}
+
+.right>img{
+	display: block;
+    width: 2.52rem;
+	margin:0.16rem auto;
+    height: auto;
+    clear: both;
+//  border-radius: 4px;
+}
+.goods{
+	width: 2.52rem;
+	margin: auto;
+}
+.goods div{
+	width: 1.22rem;
+	height: 1.22rem;
+	float: left;
+	background: white;
+	margin-right: 0.08rem;
+	margin-bottom: 0.08rem;
+//	border-radius: 4px;
+	position: relative;
+    overflow:hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.goods div:nth-child(even){
+	margin-right: 0;
+}
+.goods div img{
+	width: 90%;
+	height: auto;
+//  border-radius:4px;
+}
+ .goods div p{
+   font-size: 0.14rem;
+   color: #666666;
+   position: absolute;
+   left: 0; bottom: 0.07rem;
+   text-align: center;
+   width: 100%;
+   height: 0.2rem;
+   line-height: 0.2rem;
+ }
+#show{
+    width: 2.52rem;
+    height: auto;
+    color:#666;
+    font-size:0.14rem;
+    margin: 0.1rem auto;
+    background:none;
+}
+
+
+
+
+ }

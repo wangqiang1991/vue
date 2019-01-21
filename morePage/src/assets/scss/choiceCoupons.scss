@@ -1,0 +1,123 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+}
+#choiceCoupons_Vue{
+    height: 100%;
+    width: 100%;
+    header {
+        background: #FFFFFF;
+//      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+        width: 100%;
+        height: 0.44rem;
+    }
+    header img {
+        position: absolute;
+        top: 0.1rem;
+        left: 0.18rem;
+        height: 0.24rem;
+        width: auto;
+    }
+    header p {
+        font-size: 0.18rem;
+        text-align: center;
+        line-height: 0.44rem;
+        height: 0.44rem;
+        width: 100%;
+        color: #333333;
+    }
+    .box{
+        width: 3.43rem;
+        height: auto;
+        border: 1px solid #F2F2F2;
+        border-bottom: 3px solid #333333;
+//      border-radius: 4px;
+        padding: 0;
+        margin-top: 0.16rem;
+        margin-left: 0.16rem;
+        position: relative;
+    }
+    
+    .amount{
+        font-size: 0.18rem;
+        color: #333333;
+        padding: 0.16rem 0 0 0.16rem;
+    }
+    .how{
+        font-size: 0.12rem;
+        color: #999999;
+        padding-left: 0.16rem;
+    }
+    .time{
+        font-size: 0.1rem;
+        color: #999;
+        padding-left: 0.16rem;
+        padding-top: 0.22rem;
+        margin-bottom: 0.16rem;
+    }
+    .box .checkBtn{
+        position: absolute;
+        top: 0.46rem;
+        right: 0.16rem;
+        width: 5%;
+    }
+    .box2{
+        width: 3.43rem;
+        height: auto;
+        border: 1px solid #F2F2F2;
+//      border-radius: 4px;
+        padding: 0;
+        margin-top: 0.16rem;
+        position: relative;
+        margin-left: 0.16rem;
+    }
+    .box2 .amount{
+        font-size: 0.18rem;
+        color: #333333;
+        padding: 0.16rem 0 0 0.16rem;
+    }
+    .box2 .how{
+        font-size: 0.12rem;
+        color: #999999;
+        padding-left: 0.16rem;
+    }
+    .box2 .time{
+        font-size: 0.1rem;
+        color: #999;
+        padding-left: 0.16rem;
+        padding-top: 0.22rem;
+        margin-bottom: 0.32rem;
+    }
+    .instruction{
+            width: 3.43rem;
+            height: 0.24rem;
+            background: #F2F2F2;
+            font-size: 0.1rem;
+            color: #333333;
+            line-height: 0.24rem;
+            position: absolute;
+            bottom: 0;
+    }
+    .instruction p{
+        margin-left: 0.16rem;
+    }
+    .noCoupons{
+        width: auto;
+        height: auto;
+        text-align: center;
+        float: left;
+        margin-top: 2rem;
+        margin-left: 0.875rem;
+        >img{
+            width: 50%;
+            height: 50%;
+            display: inline;
+        }
+        >p{
+            font-size: 0.14rem;
+            color: #666666;
+//          margin-top: 0.1rem;
+        }
+    }
+}

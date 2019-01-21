@@ -1,0 +1,90 @@
+<style>
+    .multi-image-edit {
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .property-head-title {
+        width: 100%;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background-image: url("./assets/image/property_bg.png");
+    }
+
+    .div-add {
+        width: 92%;
+        height: 40px;
+        background-color: white;
+        border: 1px #999 dashed;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 20px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+</style>
+
+<div class="multi-image-edit" style="width: 100%; height: 100px;">
+    <div class="property-head-title">
+        <label style="color: white;">图片集属性</label>
+    </div>
+
+    <div class="imagesContainer" style="margin-top: 20px;margin-left: 10px;">
+        <!--<div class="imageItem" style="display: inline-block;margin-left: 0px;">-->
+            <!--<img class="showImage" style="width: 85px;height: 85px;margin-top: 0px;float: left;"-->
+                 <!--src="https://o7oq56rkl.qnssl.com/FiS7NtKB19jL_YoE90WcDG6bwwXZ?imageView2/1/w/300/h/300">-->
+            <!--<button type="button" class="close" style="opacity: 1;margin-top: -5px;margin-left: -8px;z-index: 100;">-->
+                <!--<img src="./assets/image/close.png" style="width: 13px;height: 13px;display: block;"/>-->
+            <!--</button>-->
+        <!--</div>-->
+    </div>
+
+
+    <div class="div-add" style="margin-bottom: 20px;">
+        <label style="font-size: 24px;color: #6e87cb;">+</label>
+        <span style="color: #000000;">添加图片</span>
+    </div>
+
+</div>
+
+
+<!-- 上传图片弹出层 -->
+<div class="modal" id="addPhotoModal">
+    <div class="modal-dialog" style="width: 60%">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button"
+                        class="close closeBtn" click="closeUpload()" aria-label="Close"><span
+                        aria-hidden="true">×</span></button>
+                <h4 class="modal-title">图片上传</h4>
+            </div>
+            <div class="modal-body">
+                <form name="formBox_addTp" class="form-inline" role="form" novalidate>
+                    <div class="box-header row selectImagesContainer"
+                         style="border-top: 1px solid #d5d5d5; margin-top: 10px">
+                        <!--<div class="col-sm-3 col-md-3 selectImage">-->
+                        <!--<div style="margin-top: 10px;margin-bottom: 0px;" class="thumbnail">-->
+                        <!--<img class="showImage" src="" style="width: 150px; height: 150px;">-->
+                        <!--<div class="caption" style="display: table; ">-->
+                        <!--<span class="span_success" style="font-size: small;color: #00a65a;display: none;">上传成功</span>-->
+                        <!--<span class="span_wait" style="font-size: small;">等待上传</span>-->
+                        <!--<span class="span_fail" style="font-size: small;color: red;display: none;">上传失败</span>-->
+                        <!--<span class="span_progress" style="font-size: small;display: none;">上传中</span>-->
+                        <!--</div>-->
+                        <!--</div>-->
+                        <!--</div>-->
+
+                    </div>
+                </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary beginBtn">开始上传</button>
+                    <button type="button" class="btn btn-default cancelBtn">取消上传</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+</div>
+

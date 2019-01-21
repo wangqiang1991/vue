@@ -1,0 +1,348 @@
+
+$badgeColor:#e5262a; //icon 图标颜色
+
+
+
+body,html{
+    background: #F2F2F2;
+}
+#personalCenter_Vue{
+    height: 100%;
+    margin-bottom: 0.58rem;
+    .userHeader{
+        width: 100%;
+        height: 1.39rem;
+        background: #FFFFFF;    
+        >div{
+            width:3.35rem;
+            height:100%;
+            border-bottom:1px solid #ddd;
+            overflow: hidden;
+            position: relative;
+            margin:auto;
+        }    
+        div.userBox{
+            width:2.5rem;
+            height:0.6rem;
+            position: absolute;
+            top:0.4rem;
+            left:0;
+            overflow: hidden;
+            >img{
+                width: 0.6rem;
+                height:0.6rem;
+                display:block;
+                border-radius:50%;
+            }
+            p.personalName{
+                width: 1.8rem;
+                height:0.28rem;
+                line-height:0.28rem;
+                color:#666;
+                font-size:0.2rem;
+                position: absolute;
+                top:0.03rem;
+                left:0.7rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            p.editUser{
+                width: 1.8rem;
+                height:auto;
+                color:#666;
+                font-size:0.12rem;
+                position: absolute;
+                top:0.34rem;
+                left:0.7rem;
+            }
+        }
+        div.messageBox{
+            width: 0.6rem;
+            height:0.6rem;
+            position: absolute;
+            top:0.4rem;
+            right:0;
+            overflow: hidden;
+            >img{
+                width: 0.24rem;
+                height:0.24rem;
+                display:block;
+                overflow: hidden;
+                margin:0.18rem auto;
+            }
+            span{
+                display:block;
+                width:0.08rem;
+                height:0.08rem;
+                background: $badgeColor;
+                position: absolute;
+                top: 0.18rem;
+                left: 0.35rem;              
+                border-radius:50%;
+            }
+        }
+
+    }
+    .myInformation{
+        width: 100%;
+        height: 1.39rem;
+        position: relative;
+        background: #FFFFFF;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+    .myInformation .headPic{
+        display:block;
+        border-radius: 50%;
+        width: 0.75rem;
+        height: 0.75rem;
+
+    }
+    .myInformation  .personalName{
+        margin-top:0.07rem;
+        color:#666;
+        font-size: 0.16rem;
+        text-align:center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .line{
+        width:100%;
+        height:0.1rem;
+        background:#f2f2f2;
+    }
+
+    .myInformation .personalArr{
+        width: 0.24rem;
+        height: 0.24rem;
+        position: absolute;
+        top: 0.25rem;
+        right: 0.16rem !important;
+    }
+    .myInformation  .telPhone{
+        color: #FFFFFF;
+        font-size: 0.14rem;
+        position: absolute;
+        left: 1.25rem;
+        top: 0.8rem;
+    }
+    .myInformation  .gender{
+        color: #FFFFFF;
+        font-size: 0.14rem;
+        position: absolute;
+        left: 2.5rem;
+        top: 0.8rem;
+    }
+    .myInformation  .membershipGrade{
+        color: #FFFFFF;
+        font-size: 0.12rem;
+        position: absolute;
+        left: 1.25rem;
+        top: 1.05rem;
+    }
+
+    .main{
+        height:auto;
+        width:auto;
+    }
+    .myOrder{
+        width: auto;
+        height: 1.25rem;
+        background: #FFFFFF;
+        //margin-bottom: 0.1rem;
+    }
+    .myOrderTitle{
+        height: 0.42rem;
+        width: auto;
+        
+        line-height: 0.42rem;
+        position: relative;
+    }
+    .myOrderTitle p{
+        color: #333333;
+        font-size: 0.16rem;
+        padding-left: 0.16rem;
+    }
+    .myOrderTitle span{
+        color: #cacaca;
+        font-size: 0.14rem;
+        position: absolute;
+        color: #999999;
+        top: 0rem;
+        right: 0.3rem;
+    }
+    .myOrderTitle img{
+        position: absolute;
+        top: 0.13rem;
+        right: 0.16rem;
+        width: 2%;
+        height: auto;
+    }
+    .informationBox{
+        height: 0.82rem;
+        width: 0.75rem;
+        float: left;
+    }
+    .informationBox1{
+        height: 0.82rem;
+        width: 0.9375rem;
+        float: left;
+    }
+    .picBox{
+        width: 0.75rem;
+        height: 0.82rem;
+        position: relative;
+        text-align: center;
+        >span{
+            background: $badgeColor;
+            color: #FFFFFF;
+            border: 1px solid $badgeColor;
+            text-align: center;
+            padding: 0rem 0rem;
+            min-height: 0.13rem;
+            min-width: 0.13rem;
+            line-height: 0.13rem;
+            font-size: 0.08rem;
+            position: absolute;
+            top: 0.13rem;
+            left: 0.44rem;
+        }
+    }
+    .picBox img{
+        position: absolute;
+        top: 0.20rem;
+        left: 0.26rem;
+        width: 35%;
+        height: auto;
+    }
+    .clear{
+        clear: both;
+    }
+    .picBox p{
+        color: #333333;
+        font-size: 0.12rem;
+        padding-top: 0.56rem;
+    }
+    .picBox1{
+        width: 0.9375rem;
+        height: 0.82rem;
+        position: relative;
+        text-align: center;
+        >span{
+            background: $badgeColor;
+            color: #FFFFFF;
+            border: 1px solid $badgeColor;
+            text-align: center;
+            padding: 0rem 0rem;
+            min-height: 0.13rem;
+            min-width: 0.13rem;
+            line-height: 0.13rem;
+            font-size: 0.08rem;
+            position: absolute;
+            top: 0.18rem;
+            left: 0.5rem;
+        }
+    }
+    .picBox1 img{
+        position: absolute;
+        top: 0.20rem;
+        left: 0.33rem;
+        width: 30%;
+        height: auto;
+    }
+    .picBox1 p{
+        color: #333333;
+        font-size: 0.12rem;
+        padding-top: 0.56rem;
+    }
+    .myService{
+        width: 100%;
+        height: auto;
+        overflow:hidden;
+        background:white;
+        .plan_item{
+            width:3.45rem;
+            height:0.5rem;
+            display:flex;
+            align-items:center;
+            background:white;
+            margin:0.1rem auto;
+            box-shadow: 0 2px 5px 2px #f2f2f2;
+            >img{
+                display:block;
+                width:0.24rem;
+                height:0.24rem;
+                margin-left: 0.1rem;
+                margin-right:0.15rem;
+            }
+            >p{
+                color:#666;
+                font-size:0.16rem;
+            }
+        }
+        .service_item{
+            width:3.45rem;
+            height:0.46rem;
+            display:flex;
+            align-items:center;
+            background:white;
+            margin:auto;
+            border-bottom:1px solid #ddd;
+            position:relative;
+            >img{
+                display:block;
+                width:0.24rem;
+                height:0.24rem;
+                margin-right:0.1rem;
+            }
+            >p{
+                color:#666;
+                font-size:0.14rem;
+            }
+            span.mint-badge{
+                background: $badgeColor;
+                color: #FFFFFF;
+                border: 1px solid $badgeColor;
+                text-align: center;
+                padding: 0rem 0rem;
+                min-height: 0.13rem;
+                min-width: 0.13rem;
+                line-height: 0.13rem;
+                font-size: 0.08rem;
+                position: absolute;
+                top: 0.05rem;
+                left: 0.1rem;
+            }
+            span.showUnread{
+                display:block;
+                width:0.08rem;
+                height:0.08rem;
+                background: $badgeColor;
+                position: absolute;
+                top: 0.12rem;
+                left: 0.16rem;              
+                border-radius:50%;
+            }
+        }
+    }
+    .myServiceTitle{
+        width: auto;
+        height: 0.42rem;
+        line-height: 0.42rem;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .myServiceTitle p{
+        color: #333333;
+        font-size: 0.16rem;
+        padding-left: 0.16rem
+    }
+    .myServiceBox{
+        width: auto;
+        height: 0.84rem;
+        border-bottom: 1px solid #F2F2F2;
+    }
+}

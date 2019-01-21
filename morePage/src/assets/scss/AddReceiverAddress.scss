@@ -1,0 +1,392 @@
+body,html{
+    height: 100%;
+    width: 100%;
+    background: #F2F2F2;
+}
+#addShippingAddress_Vue {
+    input{
+        padding: 0;
+    }
+    header {
+        background: #FFFFFF;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.06);
+        width: 100%;
+        height: 0.44rem;
+    }
+    header img {
+        position: absolute;
+        top: 0.1rem;
+        left: 0.18rem;
+        height: 0.24rem;
+        width: auto;
+    }
+    header p {
+        font-size: 0.18rem;
+        text-align: center;
+        line-height: 0.44rem;
+        height: 0.44rem;
+        width: 100%;
+        color: #333333;
+    }
+    .box1 {
+        height: 0.69rem;
+        width: auto;
+        background: #FFFFFF;
+    }
+    .box1 img {
+        width: 3.43rem;
+        margin-left: 0.16rem;
+        position: absolute;
+        margin-top: 0.05rem;
+    }
+    .addName {
+        margin: 0 0.16rem;
+        height: 0.69rem;
+    }
+    .addName p {
+        font-size: 0.16rem;
+        color: #333333;
+        font-weight: bold;
+        padding-top: 0.16rem;
+    }
+    .addName input {
+        display: block;
+        margin-top: 0.1rem;
+        width: 3.43rem;
+        height: 0.18rem;
+        line-height: 0.18rem;
+        border: none;
+        outline: none;
+        font-size: 0.16rem;
+//      margin-bottom: 0.05rem;
+    }
+    .addTel {
+        margin: 0 0.16rem;
+        height: 0.69rem;
+    }
+    .addTel p {
+        font-size: 0.16rem;
+        color: #333333;
+        font-weight: bold;
+        padding-top: 0.16rem;
+    }
+    .addTel input {
+        display: block;
+        margin-top: 0.1rem;
+        width: 3.43rem;
+        height: 0.18rem;
+        line-height: 0.18rem;
+        border: none;
+        outline: none;
+        font-size: 0.16rem;
+    }
+    .box2 {
+        height: 0.53rem;
+        width: auto;
+        background: #FFFFFF;
+    }
+    .box2 img {
+        width: 3.43rem;
+        margin-left: 0.16rem;
+        position: absolute;
+    }
+    .addArea {
+        margin: 0 0.16rem;
+        height: 0.53rem;
+        line-height: 0.53rem;
+        position: relative;
+    }
+    .addArea p {
+        font-size: 0.16rem;
+        color: #333333;
+        font-weight: bold;
+    }
+    .addressInformation {
+        text-align: right;
+        width: 2rem;
+        height: 0.53rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 0.14rem;
+        color: #999999;
+        margin-right: 0.2rem;
+        float: right;
+        display: inline-block;
+    }
+    .addArea .area {
+        font-size: 0.14rem;
+        color: #999999;
+        position: absolute;
+        top: 0rem;
+        right: 0.31rem;
+    }
+    .box2 .right {
+        width: 2%;
+        height: 32%;
+        display: inline-block;
+        position: absolute;
+        top: 0.17rem;
+        right: 0rem;
+    }
+    .addStreet {
+        margin: 0 0.16rem;
+        height: 0.53rem;
+        position: relative;
+    }
+    .addStreet p {
+        font-size: 0.16rem;
+        color: #333333;
+        font-weight: bold;
+        padding-top: 0.16rem;
+    }
+    .addStreet .street {
+        font-size: 0.14rem;
+        color: #999999;
+        position: absolute;
+        top: 0rem;
+        right: 0.31rem;
+    }
+    .addStreet .street img {
+        width: 18%;
+        position: absolute;
+        top: 0.19rem;
+        right: -0.2rem;
+    }
+    .box3 {
+        height: auto;
+        width: auto;
+        background: #FFFFFF;
+        margin-bottom: 0.1rem;
+        position: relative;
+        padding-bottom: 0.16rem;
+    }
+    .line1 {
+        position: absolute;
+        top: 0;
+        width: 3.43rem;
+    }
+    .detailedAddress {
+        margin: 0 0.16rem;
+        height: auto;
+        position: relative;
+    }
+    .detailedAddress p:first-child {
+        font-size: 0.16rem;
+        font-weight: bold;
+        color: #333333;
+        padding-top:0.16rem;
+        padding-bottom:0.1rem;
+    }
+    .detailedAddress textarea {
+        font-size: 0.16rem;
+        resize: none;
+        display: block;
+        width: 3.43rem;
+        height: auto;
+        
+        border: none;
+        outline: none;
+    }
+    .box3 img {
+        width: 3.43rem;
+        display:block;
+        margin:auto;
+    }
+    .setDefault {
+        width: auto;
+        height: 0.44rem;
+        background: #FFFFFF;
+        position: relative;
+    }
+    .setDefault p {
+        font-size: 0.16rem;
+        color: #333333;
+        position: absolute;
+        left: 0.16rem;
+        top: 0.11rem;
+    }
+    .setDefault span {
+        margin-top: 0.05rem;
+        margin-left: 3.08rem;
+    }
+    .setDefault .mint-switch-input:checked+.mint-switch-core {
+        border-color: #333333;
+        background-color: #333333;
+    }
+    .fixedArea {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 0.8rem;
+        background: #F2F2F2;
+    }
+    .sureBtn {
+        width: 3.43rem;
+        height: 0.46rem;
+        background: #333333;
+//      box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.10);
+//      border-radius: 4px;
+        position: fixed;
+        bottom: 0.16rem;
+        left: 0.16rem;
+        font-size: 0.16rem;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .sureBtn p {
+       // padding-top: 0.11rem;
+        width:100%;
+        height:0.46rem;
+        line-height:0.46rem;
+    }
+    .showChose {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s 0s, visibility 0s 0.3s;
+        z-index: 300;
+    }
+    .spaceArea {
+        width: 100%;
+        height: 40%;
+    }
+    .is-visible2 {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s 0s, visibility 0s 0s;
+    }
+    .address {
+        position: absolute;
+        height: 60%;
+        bottom: 0;
+        left: 0;
+        z-index: 121;
+        background: #fff;
+        width: 100%;
+    }
+    .cd-popup-container2{
+        transform: translateY(60px);
+        transition-property: transform;
+        transition-duration: 0.3s;
+    }
+    .is-visible2 .cd-popup-container2 {
+        transform: translateY(0);
+    }
+    .title {
+        text-align: center;
+        height: 0.35rem;
+    }
+    .title p {
+        //display:inline-block;
+        padding: 0;
+        margin-left: 3.2rem;
+        font-size: 0.16rem;
+        line-height: 0.35rem;
+        margin: 0;
+        font-weight: normal;
+        color: #333;
+        position: relative;
+    }
+    .title .cancel {
+        width: 6%;
+        margin: 0;
+        font-size: 0.2rem;
+        line-height: 0.34rem;
+        display: inline;
+        color: #D8D8D8;
+        position: absolute;
+        top: 0rem;
+        right: 0.05rem;
+        padding: 0.1rem;
+    }
+    .areaTitle {
+        height: 0.35rem;
+        line-height: 0.35rem;
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .area1 {
+        height: 0.35rem;
+        width: 1rem;
+        font-size: 0.14rem;
+        margin-left: 0.2rem;
+        //line-height:0.35rem;
+        color: #333;
+        float: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .area2,
+    .area3 {
+        //display:inline;
+        height: 0.35rem;
+        width: 1rem;
+        font-size: 0.14rem;
+        //line-height:0.35rem;
+        margin-left: 0.2rem;
+        color: #333;
+        float: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .areaText{
+        float: left;
+        max-width: 1rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        height: 0.35rem;
+        box-sizing: border-box;
+    }
+    .addList {
+        width: 100%;
+        height: 0.35rem;
+        padding-left: 0.32rem;
+        font-size: 0.14rem;
+        line-height: 0.88rem;
+        color: #333;
+    }
+    .addList img {
+        //      display: none;
+        margin-left: 0.1rem;
+    }
+    /* 修改的格式 */
+    .address ul {
+        margin: 0;
+        width: 3.35rem;
+        height: 82%;
+        max-height: 4.4rem;
+        overflow: auto;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+    }
+    .address ul li {
+        padding-left: 0;
+        color: #333;
+        width: 100%;
+        font-size: 0.14rem;
+        height: 0.35rem;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        border-bottom: 1px solid #f5f5f5;
+    }
+    .address .active {
+        color: #333333;
+        display: block;
+        border-bottom: 2px solid #333333;
+    }
+    .address ul .active {
+        color: #333333;
+    }
+    .address img .active {
+        display: inline-block;
+    }
+}
